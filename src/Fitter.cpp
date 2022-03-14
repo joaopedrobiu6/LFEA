@@ -155,7 +155,7 @@ void Fitter::DrawPoints()
     gr->SetMarkerColor(kBlue);
     gr->SetMarkerStyle(21);
     gr->Draw("AP");
-    // c->SaveAs("fitterpoints.pdf");
+    c->SaveAs("fitterpoints.pdf");
 };
 
 void Fitter::DrawFit(const char *title, const char *x_name, const char *y_name, int color, const char *filename)
