@@ -36,7 +36,7 @@ bin/%.o: %.cpp
 
 clean:
 	@echo cleaning...
-	      rm -f $(wildcard bin/*) $(wildcard lib/*)
+	rm -f $(wildcard bin/*) $(wildcard lib/*)
 
 dump:
 	@echo SRCS...[$(SRCS)] [$(OBJS)] [$(EXES)]

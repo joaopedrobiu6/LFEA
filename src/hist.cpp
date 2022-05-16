@@ -50,22 +50,33 @@ hist::hist(std::string filename)
     rFile.close();
 }; */
 
-void hist::MakeHist(const char *name, const char *filename, const char *x_name, const char *y_name, int a, int b, int d)
+void hist::MakeHist(const char *name, const char *filename, const char *x_name, const char *y_name, int a, int b, int d, bool opt, const char *expr)
 {
     TCanvas *c = new TCanvas("canvas", "Histogram", 0, 0, 960, 720);
 
     TH1D *histogram = new TH1D("hist", "hist", a, b, d);
     for (int i = 0; i < data.size(); i++)
         histogram->Fill(data[i]);
-    histogram->SetFillColor(kRed);
-    histogram->SetLineColor(kRed);
+    histogram->SetFillColor(kBlue);
+    histogram->SetLineColor(1);
 
     histogram->SetTitle(name);
     histogram->GetXaxis()->SetTitle(x_name);
     histogram->GetYaxis()->SetTitle(y_name);
 
-    histogram->Draw();
+    if (opt == true)
+    {
+        std::cout << "\n"
+                  << std::endl;
+        histogram->Fit(expr);
+        std::cout << "\n"
+                  << std::endl;
+        TF1 *fit = histogram->GetFunction("gaus");
+        double chi2 = fit->GetChisquare();
+        std::cout << "Chi2: " << chi2 << std::endl;
+    }
 
+    histogram->Draw("same");
     c->Update();
     c->SaveAs(filename);
 

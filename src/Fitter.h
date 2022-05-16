@@ -59,6 +59,7 @@ public:
 
     // DUMP
     void Print(std::string s = "data"); // imprime data
+    void ReportTXT(const char*);
 
 private:
     std::vector<std::vector<float>> data;
