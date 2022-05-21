@@ -83,7 +83,7 @@ void Fitter::Print(std::string s)
     if (s == "data")
     {
         std::cout << "\n******************Data******************" << std::endl;
-        for (int i = 0; i < data.size(); i++)
+        for (int i = 0; i < int(data.size()); i++)
         {
             std::cout << "(" << std::setprecision(5) << data[i][0] << ", " << data[i][1] << ")"
                       << "; ex= " << data[i][2] << "; ey= " << data[i][3] << std::endl;

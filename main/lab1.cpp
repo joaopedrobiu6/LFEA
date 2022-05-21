@@ -6,10 +6,13 @@ int main()
     // gaus = [Constant]*exp(-0.5*((x-[Mean])/[Sigma])*((x-[Mean])/[Sigma]))
 
     // histogramas 50 pulsos, números diferentes de BINS
-    hist lab1("lab1_pulses.txt");
+    hist2 lab1("lab1_pulses.txt");
     lab1.MakeHist("Hist Pulses", "lab1_hist.png", "Amp [V]", "Freq", 20, 0, 1.2, true, "gaus");
     lab1.MakeHist("Hist Pulses", "lab1_hist1.pdf", "Amp [V]", "Freq", 50, 0, 1.2, true, "gaus");
     lab1.MakeHist("Hist Pulses", "lab1_hist2.pdf", "Amp [V]", "Freq", 100, 0, 1.2, true, "gaus");
+
+    hist2 test("mca1.txt");
+    test.MakeHist("TEST", "test.png", "aa", "bb", 160, 0, 160, true, "gaus");
 
     // Calibração
 
@@ -56,6 +59,8 @@ int main()
     for (int i = 0; i < MCA2_d.size(); i++)
     {
         MCA2_d[i][0] = 0.051805 * MCA2_d[i][0] - 0.19727;
+        MCA2_d[i][2] = 0.1;
+        MCA2_d[i][3] = 0.1;
     }
 
     // FITS CALIBRADOS
@@ -64,7 +69,7 @@ int main()
     f_MCA1_calib->SetParameters(35, 6, 5);
 
     Fitter MCA1_calib(f_MCA1_calib, MCA1_d);
-    MCA1_calib.DrawFit("MCA no amp calib", "[V]", "Ocurrences", 65, "MCA1_calib.png");
+    MCA1_calib.DrawFitErrors("MCA no amp calib", "[V]", "Ocurrences", 65, "MCA1_calib.png");
 
     TF1 *f_MCA2_calib = new TF1("f", "gaus", 0, 0.5);
     f_MCA2_calib->SetParNames("Const", "Mean", "Sigma");

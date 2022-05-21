@@ -1,6 +1,6 @@
 #### definitions
 
-CXX := g++ -std=c++11
+CXX := g++ -std=c++11 -g -O3
 CXXFLAGS := $(shell root-config --cflags) -fPIC
 
 #### rules (target: dependencies -> actions)

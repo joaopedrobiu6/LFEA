@@ -31,9 +31,9 @@ DataReader::DataReader(const DataReader &D)
 
 void DataReader::dump()
 {
-    for (int i = 0; i < data.size(); i++)
+    for (int i = 0; i < int(data.size()); i++)
     {
-        for (int j = 0; j < data[0].size(); j++)
+        for (int j = 0; j < int(data[0].size()); j++)
         {
             std::cout << data[i][j] << ", ";
         }
@@ -41,16 +41,16 @@ void DataReader::dump()
     }
 };
 
-const std::vector<std::vector<float>> &DataReader::GetData()
+std::vector<std::vector<float>> DataReader::GetData()
 {
     return data;
 }
 
 std::ostream &operator<<(std::ostream &s, const DataReader &DR)
 {
-    for (int i = 0; i < DR.data.size(); i++)
+    for (int i = 0; i < int(DR.data.size()); i++)
     {
-        for (int j = 0; j < DR.data[0].size(); j++)
+        for (int j = 0; j < int(DR.data[0].size()); j++)
         {
             s << DR.data[i][j] << "\t";
         }

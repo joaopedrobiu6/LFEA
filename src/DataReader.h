@@ -24,7 +24,7 @@ public:
     DataReader(const DataReader &);
     ~DataReader() = default;
 
-    const std::vector<std::vector<float>> &GetData();
+    std::vector<std::vector<float>> GetData();
     void dump();
     friend std::ostream &operator<<(std::ostream &, const DataReader &);
 

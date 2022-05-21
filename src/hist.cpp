@@ -17,15 +17,66 @@ hist::hist(std::string filename)
         std::vector<float> temp;
         while (ss >> d)
         { // parse line words to numbers (empty space separated)
-            data.push_back(d);
+            temp.push_back(d);
         }
         ss.clear(); // erase stringstream contents
-        // data.push_back(temp);
+        data.push_back(temp);
     }
     rFile.close();
 };
 
-/* void hist::DataInput(std::string filename)
+void hist::dump()
+{
+    for (int i = 0; i < data.size(); i++)
+        for (int j = 0; data[i].size(); j++)
+            std::cout << data[i][j] << std::endl;
+};
+
+void hist::MCA_Hist(const char *title, const char *x_name, const char *y_name, const char *filename, int n_bin, double min, double max, bool fitopt, bool wapp, const char *expr)
+{
+    TApplication app("app", NULL, NULL);
+    TCanvas c("canvas", "histogram", 0, 0, 1280, 720);
+    TRootCanvas *r = (TRootCanvas *)c.GetCanvasImp();
+    r->Connect("CloseWindow()", "TApplication", gApplication, "Terminate()");
+
+    TH1D h("h", "h", n_bin, min, max);
+
+    h.SetFillColor(kBlue);
+    h.SetLineColor(1);
+
+    h.SetTitle(title);
+    h.GetXaxis()->SetTitle(x_name);
+    h.GetYaxis()->SetTitle(y_name);
+
+    for (int i = 0; i < data.size(); i++)
+    {
+        h.SetBinContent(i, data[i][1]);
+    }
+
+    h.Draw("E");
+
+    if (fitopt == true)
+    {
+        TF1 f("f", expr, min, max); // Inserir formula para fazer o fit
+
+        h.Fit("f");
+
+        f.Draw("SAME");
+    }
+
+    if (wapp == true)
+    {
+
+        app.Run("true");
+    }
+    if (wapp == false)
+    {
+        c.Update();
+        c.SaveAs(filename);
+    }
+};
+
+hist2::hist2(std::string filename)
 {
     std::fstream rFile(filename); // read mode
     if (rFile.fail())
@@ -48,15 +99,16 @@ hist::hist(std::string filename)
         // data.push_back(temp);
     }
     rFile.close();
-}; */
+};
 
-void hist::MakeHist(const char *name, const char *filename, const char *x_name, const char *y_name, int a, int b, int d, bool opt, const char *expr)
+void hist2::MakeHist(const char *name, const char *filename, const char *x_name, const char *y_name, int a, int b, int d, bool opt, const char *expr)
 {
     TCanvas *c = new TCanvas("canvas", "Histogram", 0, 0, 960, 720);
 
     TH1D *histogram = new TH1D("hist", "hist", a, b, d);
     for (int i = 0; i < data.size(); i++)
         histogram->Fill(data[i]);
+
     histogram->SetFillColor(kBlue);
     histogram->SetLineColor(1);
 
@@ -82,10 +134,4 @@ void hist::MakeHist(const char *name, const char *filename, const char *x_name, 
 
     delete histogram;
     delete c;
-};
-
-void hist::dump()
-{
-    for (int i = 0; i < data.size(); i++)
-        std::cout << data[i] << std::endl;
 };
