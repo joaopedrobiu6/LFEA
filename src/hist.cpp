@@ -34,10 +34,10 @@ void hist::dump()
 
 void hist::MCA_Hist(const char *title, const char *x_name, const char *y_name, const char *filename, int n_bin, double min, double max, bool fitopt, bool wapp, const char *expr)
 {
-    TApplication app("app", NULL, NULL);
+    //TApplication app("app", NULL, NULL);
     TCanvas c("canvas", "histogram", 0, 0, 1280, 720);
-    TRootCanvas *r = (TRootCanvas *)c.GetCanvasImp();
-    r->Connect("CloseWindow()", "TApplication", gApplication, "Terminate()");
+    //TRootCanvas *r = (TRootCanvas *)c.GetCanvasImp();
+    //r->Connect("CloseWindow()", "TApplication", gApplication, "Terminate()");
 
     TH1D h("h", "h", n_bin, min, max);
 
@@ -67,7 +67,7 @@ void hist::MCA_Hist(const char *title, const char *x_name, const char *y_name, c
     if (wapp == true)
     {
 
-        app.Run("true");
+        //app.Run("true");
     }
     if (wapp == false)
     {
