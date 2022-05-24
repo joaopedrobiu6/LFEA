@@ -1,3 +1,10 @@
 {
-    "C_Cpp.errorSquiggles": "Disabled"
+    "C_Cpp.errorSquiggles": "Disabled",
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/joaobiu/LFEA/bin",
+            "binaryPath": "/home/joaobiu/LFEA/bin/cintilador.exe",
+            "binaryArgs": []
+        }
+    ]
 }
