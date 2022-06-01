@@ -1,0 +1,8 @@
+ FCN=0.995693 FROM MIGRAD    STATUS=CONVERGED     146 CALLS         147 TOTAL
+                     EDM=5.7922e-09    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           8.05370e+04   1.30455e+04   1.33927e+00  -9.39214e-10
+   2  p1          -7.63065e+03   3.80293e+03   4.12182e-01  -3.14789e-08
+Info in <TCanvas::Print>: pdf file /home/joaobiu/LFEA/dist_fit_arctan.pdf has been created
+
