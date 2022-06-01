@@ -137,7 +137,10 @@ void Fitter::fit()
 
 void Fitter::DrawPoints()
 {
+    TApplication *app = new TApplication("app", nullptr, nullptr);
     TCanvas *c = new TCanvas("c", "Points", 1280, 720);
+    TRootCanvas *r = (TRootCanvas *)c->GetCanvasImp();
+    r->Connect("CloseWindow()", "TApplication", gApplication, "Terminate()");
     c->SetGrid();
     c->GetFrame()->SetFillColor(21);
     c->GetFrame()->SetBorderSize(12);
@@ -155,7 +158,9 @@ void Fitter::DrawPoints()
     gr->SetMarkerColor(kBlue);
     gr->SetMarkerStyle(21);
     gr->Draw("AP");
-    c->SaveAs("fitterpoints.pdf");
+    //c->SaveAs("fitterpoints.pdf");
+    c->Update();
+    app->Run();
 };
 
 void Fitter::DrawFit(const char *title, const char *x_name, const char *y_name, int color, const char *filename)
@@ -231,8 +236,8 @@ void Fitter::DrawFitErrors(const char *title, const char *x_name, const char *y_
     TGraphErrors *gr1 = new TGraphErrors(n, x, y, ex, ey);
     gStyle->SetTitleFontSize(0.05);
 
-    gr1->Fit(f, "q");
-    GetFitInfo(f);
+    gr1->Fit(f);
+    //GetFitInfo(f);
 
     gr1->SetTitle(title);
     gr1->GetXaxis()->SetTitle(x_name);

@@ -1,13 +1,11 @@
 make all --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/joaobiu/LFEA'
- 
 echo compiling... src/DataAnalysis.cpp [bin/DataAnalysis.o]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/DataAnalysis.o src/DataAnalysis.cpp -I src -I /usr/include/eigen3 
 echo compiling... src/DataPoints.cpp [bin/DataPoints.o]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/DataPoints.o src/DataPoints.cpp -I src -I /usr/include/eigen3 
 echo compiling... src/DataReader.cpp [bin/DataReader.o]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/DataReader.o src/DataReader.cpp -I src -I /usr/include/eigen3 
- 
 echo compiling... src/Fitter.cpp [bin/Fitter.o]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/Fitter.o src/Fitter.cpp -I src -I /usr/include/eigen3 
 echo compiling... src/hist.cpp [bin/hist.o]
@@ -51,7 +49,6 @@ echo compiling... main/tFitter.cpp [bin/tFitter.o]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/tFitter.o main/tFitter.cpp -I src -I /usr/include/eigen3 
 echo executable... bin/tFitter.o [bin/tFitter.exe]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -o bin/tFitter.exe bin/tFitter.o -I src -I /usr/include/eigen3 -L lib -l BIU -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
- 
 echo compiling... main/tfit.cpp [bin/tfit.o]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/tfit.o main/tfit.cpp -I src -I /usr/include/eigen3 
 echo executable... bin/tfit.o [bin/tfit.exe]
