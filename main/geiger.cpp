@@ -3,9 +3,7 @@
 
 int main()
 {
-    //Primeira parte do geiger!
-    // no geiger.txt meter as terceiras e quartas colunas do excel + os erros que nao estão lá ainda
-    hist Geiger("geiger.txt");
-    Geiger.MCA_Hist("Histogram - Geiger Detector", "V", "Events", "geiger.pdf", int #, int min, int max, false, false, "");
+    hist2 lab1("countsgeiger.txt");
+    lab1.MakeHist("Estatística de contagens\nDetetor Geiger Muller", "geigercounts.png", "Contagens", "Frequencia", 20, 1780, 1950, false, "gaus");
     return 0;
 }

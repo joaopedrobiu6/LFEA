@@ -1,0 +1,7 @@
+FCN=11.8478 FROM MINOS     STATUS=SUCCESSFUL     12 CALLS          55 TOTAL
+                     EDM=3.64169e-20    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.49677e+03   9.71910e+01   1.67708e-06  -2.06409e-13
+   2  p1           2.52783e+00   1.03898e-01   1.03898e-01   9.65420e-10
+
