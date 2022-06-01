@@ -5,6 +5,21 @@
             "cwd": "/home/joaobiu/LFEA/bin",
             "binaryPath": "/home/joaobiu/LFEA/bin/cintilador.exe",
             "binaryArgs": []
+        },
+        {
+            "cwd": "/home/joaobiu/LFEA/bin",
+            "binaryPath": "/home/joaobiu/LFEA/bin/geiger.exe",
+            "binaryArgs": []
+        },
+        {
+            "cwd": "/home/joaobiu/LFEA/bin",
+            "binaryPath": "/home/joaobiu/LFEA/bin/sil.exe",
+            "binaryArgs": []
+        },
+        {
+            "cwd": "/home/joaobiu/LFEA/bin",
+            "binaryPath": "/home/joaobiu/LFEA/bin/plateau2.exe",
+            "binaryArgs": []
         }
     ]
 }
