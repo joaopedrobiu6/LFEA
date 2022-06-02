@@ -62,6 +62,7 @@ void HistMaker(std::vector<std::vector<float>> data, bool wapp)
     {
         h.SetBinContent(i, data[i][1]);
         h.SetBinError(i, data[i][2]);
+        gStyle->SetErrorX(0);
     }
 
     h.Draw("E1");

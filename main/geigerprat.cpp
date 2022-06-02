@@ -27,7 +27,7 @@ std::vector<std::vector<float>> ReadData(std::string filename);
 
 int main()
 {
-    std::vector<std::vector<float>> data = ReadData("gmdist.txt");
+    std::vector<std::vector<float>> data = ReadData("prateleiras.txt");
     GraphMaker(data, true);
     return 0;
 }
@@ -53,11 +53,11 @@ void GraphMaker(std::vector<std::vector<float>> data, bool wapp)
     }
 
     TGraphErrors gr(n, x, y, ex, ey);
-    gr.SetTitle("Cs-137 - Variac#tilde{a}o da taxa de contagens com a dist#hat{a}ncia;Dist. [m];Taxa de Contagens");
+    gr.SetTitle("Cs-137 - Variac#tilde{a}o da taxa de contagens com a dist#hat{a}ncia;Prateleira;Taxa de Contagens");
     gr.SetMarkerColor(4);
     gr.SetMarkerStyle(21);
 
-    TF1 *f = new TF1("func", "[0]*(1/(x*x + [1])) + [2]", 0, 1);
+    TF1 *f = new TF1("func", "[0]*(1/(x*x)) + [2]", 0, 1);
     gr.Fit(f);
 
     c.Update();
