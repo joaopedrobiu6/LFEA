@@ -54,13 +54,14 @@ void HistMaker(std::vector<std::vector<float>> data, bool wapp)
     gStyle->SetStatX(0.35);
 
     h.SetTitle("Curva de Resposta do detetor Geiger Muller em Func#tilde{a}o da Tens#tilde{a}o Aplicada");
-    h.GetXaxis()->SetTitle("V");
-    h.GetYaxis()->SetTitle("Contagens");
+    h.GetXaxis()->SetTitle("Tens#tilde{a}o [V]");
+    h.GetYaxis()->SetTitle("Taxa de Contagens [1/s]");
     h.Smooth();
 
     for (int i = 0; i < data.size(); i++)
     {
         h.SetBinContent(i, data[i][1]);
+        h.SetBinError(i, data[i][2]);
     }
 
     h.Draw("E1");

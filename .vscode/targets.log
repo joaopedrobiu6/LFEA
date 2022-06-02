@@ -5,9 +5,8 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Wed Jun  1 18:20:31 2022
+# Make data base, printed on Thu Jun  2 01:37:28 2022
 
 # Variables
 
@@ -26,11 +25,13 @@ SNAP_INSTANCE_KEY =
 # environment
 JUPYTER_PATH = /home/joaobiu/root/etc/notebook
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-6c9a5324-d76b-4259-b11b-e69d28f6d03c.sock
+GJS_DEBUG_OUTPUT = stderr
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-b9da1dcf-b14f-4847-923b-e1be3b99d992.sock
 # makefile (from 'Makefile', line 18)
 VPATH = main:src
 # environment
-VSCODE_CWD = /home/joaobiu/LFEA
+VSCODE_CWD = /home/joaobiu
 # environment
 JUPYTER_CONFIG_DIR = /home/joaobiu/root/etc/notebook
 # default
@@ -55,8 +56,6 @@ PWD = /home/joaobiu/LFEA
 %D = $(patsubst %/,%,$(dir $%))
 # environment
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
-# environment
-OLDPWD = /home/joaobiu
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
@@ -68,13 +67,11 @@ VSCODE_CODE_CACHE_PATH = /home/joaobiu/.config/Code/CachedData/c3511e6c69bb39013
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.1M25M1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.HR9CN1
 # default
 .LOADED := 
 # default
 .INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
-# environment
-GNOME_TERMINAL_SERVICE = :1.1470
 # makefile
 MAKEFLAGS = pqrR
 # makefile
@@ -114,17 +111,19 @@ ROOT_LIB := -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGr
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 32926
+VSCODE_PID = 30489
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
 DYLD_LIBRARY_PATH = /home/joaobiu/root/lib
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # makefile (from 'Makefile', line 11)
 ROOT_INC := -I /home/joaobiu/root/include
 # environment
-SESSION_MANAGER = local/joaobiu-IdeaPad-5-15ARE05:@/tmp/.ICE-unix/1644,unix/joaobiu-IdeaPad-5-15ARE05:/tmp/.ICE-unix/1644
+SESSION_MANAGER = local/joaobiu-IdeaPad-5-15ARE05:@/tmp/.ICE-unix/1701,unix/joaobiu-IdeaPad-5-15ARE05:/tmp/.ICE-unix/1701
 # automatic
 *F = $(notdir $*)
 # environment
@@ -154,11 +153,13 @@ XMODIFIERS = @im=ibus
 # environment
 LD_LIBRARY_PATH = /home/joaobiu/root/lib
 # environment
-SHLVL = 1
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/bd2dea57_111a_4fb5_b7d9_2740b9327a8a
+SHLVL = 0
 # environment
 MAKELEVEL := 0
+# environment
+IM_CONFIG_CHECK_ENV = 1
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
@@ -166,7 +167,7 @@ CLING_STANDARD_PCH = none
 # environment
 SNAP_COOKIE = 4_pkLujr6fe9vl1Zb4iZa9s4toeevLJJPORa8PyYX2y8JXolVvD2
 # environment
-PATH = /home/joaobiu/root/bin:/home/joaobiu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+PATH = /home/joaobiu/.local/bin:/home/joaobiu/root/bin:/home/joaobiu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
 # default
 MAKEFILES := 
 # environment
@@ -177,6 +178,8 @@ LANGUAGE = pt:pt_BR:en
 SNAP_USER_COMMON = /home/joaobiu/snap/code/common
 # environment
 SNAP = /snap/code/97
+# environment
+INVOCATION_ID = fc7a50c60cc34c64828e614a3b877b29
 # environment
 SNAP_REVISION = 97
 # environment
@@ -194,7 +197,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 XDG_CURRENT_DESKTOP = Unity
 # environment
-LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+LS_COLORS = 
 # automatic
 +F = $(notdir $+)
 # environment
@@ -206,13 +209,15 @@ GNUMAKEFLAGS :=
 # environment
 LOGNAME = joaobiu
 # environment
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
+# environment
 SNAP_ARCH = amd64
 # makefile (from 'Makefile', line 10)
 EXES :=  bin/cintilador.exe  bin/geiger.exe  bin/lab1.exe  bin/lab1b.exe  bin/mcalab1.exe  bin/plateau1.exe  bin/plateau2.exe  bin/sil.exe  bin/tFitter.exe  bin/tfit.exe
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 1678
+SYSTEMD_EXEC_PID = 1739
 # environment
 DISPLAY = :0
 # environment
@@ -230,15 +235,21 @@ SNAP_DATA = /var/snap/code/97
 # environment
 SNAP_CONTEXT = 4_pkLujr6fe9vl1Zb4iZa9s4toeevLJJPORa8PyYX2y8JXolVvD2
 # environment
+MANAGERPID = 1565
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 30440
+# environment
 PYTHONPATH = /home/joaobiu/root/lib
 # makefile (from 'Makefile', line 13)
 EIGEN_INC := -I /usr/include/eigen3
 # environment
+_ = /snap/code/97/usr/share/code/code
+# environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-COLORTERM = truecolor
-# environment
 GDK_PIXBUF_MODULE_FILE = /home/joaobiu/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+JOURNAL_STREAM = 8:34789
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -251,8 +262,6 @@ QT_IM_MODULE = ibus
 ELECTRON_RUN_AS_NODE = 1
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-f8712f32-1.67.2-main.sock
-# environment
-TERM = xterm-256color
 # environment
 SNAP_NAME = code
 # environment
@@ -268,13 +277,12 @@ SNAP_VERSION = c3511e6c
 # default
 SUFFIXES := 
 # environment
+ 
 SHLIB_PATH = /home/joaobiu/root/lib
 # environment
 VSCODE_CLI = 1
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
-# environment
-VTE_VERSION = 6800
 # environment
 SNAP_COMMON = /var/snap/code/common
 # makefile (from 'Makefile', line 4)
@@ -292,8 +300,7 @@ GDMSESSION = ubuntu
 # environment
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # variable set hash-table stats:
- 
-# Load=140/1024=14%, Rehash=0, Collisions=16/185=9%
+# Load=144/1024=14%, Rehash=0, Collisions=9/189=5%
 
 # Pattern-specific Variable Values
 
@@ -304,12 +311,12 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # main/bin: could not be stat'd.
 # src/bin: could not be stat'd.
 # src (device 66309, inode 5644848): 12 files, no impossibilities.
-# . (device 66309, inode 5118178): 29 files, no impossibilities.
+# . (device 66309, inode 5118178): 38 files, no impossibilities.
 # main (device 66309, inode 5644839): 15 files, no impossibilities.
-# bin (device 66309, inode 6300799): 18 files, no impossibilities.
+# bin (device 66309, inode 6300799): 21 files, no impossibilities.
 # lib (device 66309, inode 6429047): No files, no impossibilities so far.
 
-# 74 files, no impossibilities in 7 directories.
+# 86 files, no impossibilities in 7 directories.
 
 # Implicit Rules
 
@@ -346,7 +353,7 @@ bin/DataAnalysis.o: src/DataAnalysis.cpp
 bin/plateau1.exe: bin/plateau1.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'plateau1'
-#  Last modified 2022-06-01 16:37:13.225646845
+#  Last modified 2022-06-02 01:15:45.656704861
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -356,7 +363,7 @@ bin/plateau1.exe: bin/plateau1.o lib/libBIU.a
 # Not a target:
 main/plateau2.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-01 01:35:42.58478364
+#  Last modified 2022-06-01 23:04:38.62729622
 #  File has been updated.
 #  Successfully updated.
 
@@ -416,7 +423,7 @@ Makefile:
 bin/plateau2.exe: bin/plateau2.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'plateau2'
-#  Last modified 2022-06-01 16:22:59.122007472
+#  Last modified 2022-06-02 01:15:47.856722604
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -426,7 +433,7 @@ bin/plateau2.exe: bin/plateau2.o lib/libBIU.a
 bin/tfit.exe: bin/tfit.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'tfit'
-#  Last modified 2022-06-01 16:23:03.034024141
+#  Last modified 2022-06-02 01:15:51.812754598
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -451,7 +458,7 @@ bin/geiger.o: main/geiger.cpp
 bin/geiger.exe: bin/geiger.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'geiger'
-#  Last modified 2022-06-01 18:12:11.881601827
+#  Last modified 2022-06-02 01:15:37.276637602
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -476,7 +483,7 @@ main/tfit.cpp:
 bin/lab1b.exe: bin/lab1b.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'lab1b'
-#  Last modified 2022-06-01 16:22:49.737967486
+#  Last modified 2022-06-02 01:15:39.304653831
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -517,7 +524,7 @@ bin/DataPoints.o: src/DataPoints.cpp
 bin/sil.exe: bin/sil.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'sil'
-#  Last modified 2022-06-01 16:23:01.058015721
+#  Last modified 2022-06-02 01:15:49.832738571
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -554,9 +561,10 @@ bin/Fitter.o: src/Fitter.cpp
 		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
 
 bin/lab1.exe: bin/lab1.o lib/libBIU.a
+ 
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'lab1'
-#  Last modified 2022-06-01 16:22:52.845980729
+#  Last modified 2022-06-02 01:15:41.556671889
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -572,7 +580,6 @@ src/hist.cpp:
 
 bin/DataReader.o: src/DataReader.cpp
 #  Precious file (prerequisite of .PRECIOUS).
- 
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'DataReader'
 #  Last modified 2022-06-01 15:27:34.550426957
@@ -598,7 +605,7 @@ all: bin/cintilador.exe bin/geiger.exe bin/lab1.exe bin/lab1b.exe bin/mcalab1.ex
 bin/tFitter.exe: bin/tFitter.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'tFitter'
-#  Last modified 2022-06-01 16:23:05.062032782
+#  Last modified 2022-06-02 01:15:53.908771595
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -673,7 +680,7 @@ main/plateau1.cpp:
 # Not a target:
 main/geiger.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-01 18:12:05.509548072
+#  Last modified 2022-06-01 18:26:19.735022522
 #  File has been updated.
 #  Successfully updated.
 
@@ -687,7 +694,7 @@ src/Fitter.cpp:
 bin/mcalab1.exe: bin/mcalab1.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'mcalab1'
-#  Last modified 2022-06-01 16:22:54.841989234
+#  Last modified 2022-06-02 01:15:43.464687218
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -697,7 +704,7 @@ bin/mcalab1.exe: bin/mcalab1.o lib/libBIU.a
 bin/cintilador.exe: bin/cintilador.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'cintilador'
-#  Last modified 2022-06-01 16:22:09.70179689
+#  Last modified 2022-06-02 01:15:35.044619775
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -734,7 +741,7 @@ src/DataAnalysis.cpp:
 lib/libBIU.a: bin/DataAnalysis.o bin/DataPoints.o bin/DataReader.o bin/Fitter.o bin/hist.o
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'libBIU'
-#  Last modified 2022-06-01 16:22:06.893784925
+#  Last modified 2022-06-02 01:15:32.992603419
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 25):
@@ -758,12 +765,12 @@ main/lab1b.cpp:
 # General ('VPATH' variable) search path:
 # main:src
 
-# strcache buffers: 1 (0) / strings = 137 / storage = 1596 B / avg = 11 B
-# current buf: size = 8162 B / used = 1596 B / count = 137 / avg = 11 B
+# strcache buffers: 1 (0) / strings = 149 / storage = 1850 B / avg = 12 B
+# current buf: size = 8162 B / used = 1850 B / count = 149 / avg = 12 B
 
-# strcache performance: lookups = 275 / hit rate = 50%
+# strcache performance: lookups = 287 / hit rate = 48%
 # hash-table stats:
-# Load=137/8192=2%, Rehash=0, Collisions=0/275=0%
-# Finished Make data base on Wed Jun  1 18:20:31 2022
+# Load=149/8192=2%, Rehash=0, Collisions=2/287=1%
+# Finished Make data base on Thu Jun  2 01:37:28 2022
 
  

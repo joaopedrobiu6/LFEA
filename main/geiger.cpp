@@ -29,9 +29,6 @@ int main()
 {
     std::vector<std::vector<float>> data = ReadData("gmdist.txt");
     GraphMaker(data, true);
-    /* hist2 lab1("countsgeiger.txt");
-    lab1.MakeHist("Estatística de contagens\nDetetor Geiger Muller", "geigercounts.png", "Contagens", "Frequencia", 20, 1780, 1950, false, "gaus");
-     */
     return 0;
 }
 
@@ -56,7 +53,7 @@ void GraphMaker(std::vector<std::vector<float>> data, bool wapp)
     }
 
     TGraphErrors gr(n, x, y, ex, ey);
-    gr.SetTitle("Cs-137 - Variac#tilde{a}o do n#acute{u}mero contagens com a dist#hat{a}ncia;Dist. [m];Contagens");
+    gr.SetTitle("Cs-137 - Variac#tilde{a}o da taxa de contagens com a dist#hat{a}ncia;Dist. [m];Taxa de Contagens");
     gr.SetMarkerColor(4);
     gr.SetMarkerStyle(21);
 
