@@ -27,7 +27,7 @@ std::vector<std::vector<float>> ReadData(std::string filename);
 
 int main()
 {
-    std::vector<std::vector<float>> data = ReadData("gmdist.txt");
+    std::vector<std::vector<float>> data = ReadData("gmd.txt");
     GraphMaker(data, true);
     return 0;
 }
@@ -48,7 +48,7 @@ void GraphMaker(std::vector<std::vector<float>> data, bool wapp)
     {
         x[i] = data[i][0];
         y[i] = data[i][1];
-        ex[i] = sqrt(0.015875 * 0.015875 + data[i][0] * data[i][0]) - data[i][0];
+        ex[i] = data[i][2];
         ey[i] = data[i][3];
     }
 
@@ -57,7 +57,7 @@ void GraphMaker(std::vector<std::vector<float>> data, bool wapp)
     gr.SetMarkerColor(4);
     gr.SetMarkerStyle(21);
 
-    TF1 *f = new TF1("func", "[0]*(1/(x*x + [1])) + [2]", 0, 1);
+    TF1 *f = new TF1("func", "[0]*sin(atan(0.03175/x)/2)^2", 0, 1);
     gr.Fit(f);
 
     c.Update();

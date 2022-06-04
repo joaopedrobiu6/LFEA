@@ -1,0 +1,21 @@
+FCN=4.74903 FROM MINOS     STATUS=SUCCESSFUL    249 CALLS         863 TOTAL
+                     EDM=1.26758e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           2.75830e-01   5.31664e-02  -7.50752e-05  -1.86606e-02
+   2  p1          -1.64772e+01   1.61513e+01  -2.70819e-03   6.47448e-05
+   3  p2           5.95068e+00   1.67327e+02   1.67327e+02   4.94053e-06
+
+([0]*exp(-[1]*x))/(x*x) + [2]
+
+
+
+
+FCN=5.48129 FROM MINOS     STATUS=SUCCESSFUL     40 CALLS        1346 TOTAL
+                     EDM=8.14352e-19    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           3.55017e-01   4.15726e-02   3.15671e-04  -4.02208e-02
+   2  p1           1.15198e+02   2.01777e+01   2.01777e+01   6.76228e-06
+   
+   [0]/(x*x) + [1]

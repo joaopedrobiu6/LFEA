@@ -1,7 +1,5 @@
 make all --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/joaobiu/LFEA'
-echo compiling... src/DataAnalysis.cpp [bin/DataAnalysis.o]
-g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/DataAnalysis.o src/DataAnalysis.cpp -I src -I /usr/include/eigen3 
 echo compiling... src/DataPoints.cpp [bin/DataPoints.o]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/DataPoints.o src/DataPoints.cpp -I src -I /usr/include/eigen3 
 echo compiling... src/DataReader.cpp [bin/DataReader.o]
@@ -10,9 +8,13 @@ echo compiling... src/Fitter.cpp [bin/Fitter.o]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/Fitter.o src/Fitter.cpp -I src -I /usr/include/eigen3 
 echo compiling... src/hist.cpp [bin/hist.o]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/hist.o src/hist.cpp -I src -I /usr/include/eigen3 
-echo making lib...[bin/DataAnalysis.o bin/DataPoints.o bin/DataReader.o bin/Fitter.o bin/hist.o]
-ar ruv lib/libBIU.a bin/DataAnalysis.o bin/DataPoints.o bin/DataReader.o bin/Fitter.o bin/hist.o
+echo making lib...[bin/DataPoints.o bin/DataReader.o bin/Fitter.o bin/hist.o]
+ar ruv lib/libBIU.a bin/DataPoints.o bin/DataReader.o bin/Fitter.o bin/hist.o
 ranlib lib/libBIU.a
+echo compiling... main/alpha.cpp [bin/alpha.o]
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/alpha.o main/alpha.cpp -I src -I /usr/include/eigen3 
+echo executable... bin/alpha.o [bin/alpha.exe]
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -o bin/alpha.exe bin/alpha.o -I src -I /usr/include/eigen3 -L lib -l BIU -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
 echo compiling... main/cintilador.cpp [bin/cintilador.o]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/cintilador.o main/cintilador.cpp -I src -I /usr/include/eigen3 
 echo executable... bin/cintilador.o [bin/cintilador.exe]
@@ -53,6 +55,6 @@ echo compiling... main/tfit.cpp [bin/tfit.o]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/tfit.o main/tfit.cpp -I src -I /usr/include/eigen3 
 echo executable... bin/tfit.o [bin/tfit.exe]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -o bin/tfit.exe bin/tfit.o -I src -I /usr/include/eigen3 -L lib -l BIU -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
-rm bin/mcalab1.o bin/plateau1.o bin/geiger.o bin/cintilador.o bin/lab1b.o bin/tfit.o bin/plateau2.o bin/tFitter.o bin/lab1.o bin/sil.o
+rm bin/alpha.o bin/mcalab1.o bin/plateau1.o bin/geiger.o bin/cintilador.o bin/lab1b.o bin/tfit.o bin/plateau2.o bin/tFitter.o bin/lab1.o bin/sil.o
 make: Leaving directory '/home/joaobiu/LFEA'
  
