@@ -28,7 +28,7 @@ std::vector<std::vector<float>> ReadData(std::string filename)
     return data;
 };
 
-void HistMaker(std::vector<std::vector<float>> data, bool wapp, int n, double min, double max, const char *title, const char *savename, const char* draw)
+void HistMaker(std::vector<std::vector<float>> data, bool wapp, int n, double min, double max, const char *title, const char *savename, const char *draw)
 {
     TApplication app("app", NULL, NULL);
     TCanvas c("canvas", "histogram", 0, 0, 1280, 720);
@@ -63,4 +63,43 @@ void HistMaker(std::vector<std::vector<float>> data, bool wapp, int n, double mi
         c.Update();
         c.SaveAs(savename);
     }
+};
+
+void GraphMaker(std::vector<std::vector<float>> data, const char *title, const char *expr, const char *draw, int color)
+{
+    TApplication app("app", NULL, NULL);
+    TCanvas c("canvas", "histogram", 0, 0, 1280, 720);
+    TRootCanvas *r = (TRootCanvas *)c.GetCanvasImp();
+    r->Connect("CloseWindow()", "TApplication", gApplication, "Terminate()");
+
+    int n = data.size();
+    Double_t x[n];
+    Double_t y[n];
+    Double_t ex[n];
+    Double_t ey[n];
+
+    for (int i = 0; i < data.size(); i++)
+    {
+        x[i] = data[i][0];
+        y[i] = data[i][1];
+        ex[i] = data[i][2];
+        ey[i] = data[i][3];
+    }
+
+    TGraphErrors gr(n, x, y, ex, ey);
+    gr.SetTitle(title);
+    gr.SetMarkerColor(color);
+    gr.SetMarkerSize(1.5);
+    gr.SetMarkerStyle(21);
+
+    TF1 *f = new TF1("func", expr, 0, 1);
+    f->SetLineColor(kRed + 1);
+    f->SetLineWidth(2);
+
+    gr.Fit(f);
+    std::cout << "ChiSquared: " << f->GetChisquare() << std::endl;
+
+    c.Update();
+    gr.Draw(draw);
+    app.Run("true");
 };

@@ -2,7 +2,7 @@
 
 int main()
 {
-    auto d = ReadData("polonio_energia.txt");
-    HistMaker(d, true, 1024, 0, 1023, "Po-210 Energy Spectrum;CHN;Events Recorded", "pol_energy_chn.pdf", "P");
+    auto d = ReadData("americio.txt");
+    HistMaker(d, true, 1024, 4.63800, 0.00177 * 1023 + 4.63800, "Espectro de Energia de uma fonte emissora #alpha;Energia [MeV];Eventos Detetados", "americio_chn.pdf", "P");
     return 0;
 }
