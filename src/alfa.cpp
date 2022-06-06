@@ -92,7 +92,7 @@ void GraphMaker(std::vector<std::vector<float>> data, const char *title, const c
     gr.SetMarkerSize(1.5);
     gr.SetMarkerStyle(21);
 
-    TF1 *f = new TF1("func", expr, 0, 1);
+    TF1 *f = new TF1("func", expr, x[0], x[data.size()]);
     f->SetLineColor(kRed + 1);
     f->SetLineWidth(2);
 

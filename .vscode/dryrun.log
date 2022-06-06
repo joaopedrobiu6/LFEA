@@ -1,66 +1,66 @@
 make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/joaobiu/LFEA'
 echo compiling... src/DataPoints.cpp [bin/DataPoints.o]
-g++ -std=c++11 -g -O3  -fPIC -c -o bin/DataPoints.o src/DataPoints.cpp -I src -I /usr/include/eigen3 
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/DataPoints.o src/DataPoints.cpp -I src -I /usr/include/eigen3 
 echo compiling... src/DataReader.cpp [bin/DataReader.o]
-g++ -std=c++11 -g -O3  -fPIC -c -o bin/DataReader.o src/DataReader.cpp -I src -I /usr/include/eigen3 
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/DataReader.o src/DataReader.cpp -I src -I /usr/include/eigen3 
 echo compiling... src/Fitter.cpp [bin/Fitter.o]
-g++ -std=c++11 -g -O3  -fPIC -c -o bin/Fitter.o src/Fitter.cpp -I src -I /usr/include/eigen3 
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/Fitter.o src/Fitter.cpp -I src -I /usr/include/eigen3 
 echo compiling... src/alfa.cpp [bin/alfa.o]
-g++ -std=c++11 -g -O3  -fPIC -c -o bin/alfa.o src/alfa.cpp -I src -I /usr/include/eigen3 
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/alfa.o src/alfa.cpp -I src -I /usr/include/eigen3 
 echo compiling... src/hist.cpp [bin/hist.o]
-g++ -std=c++11 -g -O3  -fPIC -c -o bin/hist.o src/hist.cpp -I src -I /usr/include/eigen3 
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/hist.o src/hist.cpp -I src -I /usr/include/eigen3 
 echo making lib...[bin/DataPoints.o bin/DataReader.o bin/Fitter.o bin/alfa.o bin/hist.o]
 ar ruv lib/libBIU.a bin/DataPoints.o bin/DataReader.o bin/Fitter.o bin/alfa.o bin/hist.o
 ranlib lib/libBIU.a
+echo compiling... main/ajustealpha.cpp [bin/ajustealpha.o]
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/ajustealpha.o main/ajustealpha.cpp -I src -I /usr/include/eigen3 
+echo executable... bin/ajustealpha.o [bin/ajustealpha.exe]
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -o bin/ajustealpha.exe bin/ajustealpha.o -I src -I /usr/include/eigen3 -L lib -l BIU -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
 echo compiling... main/alpha.cpp [bin/alpha.o]
-g++ -std=c++11 -g -O3  -fPIC -c -o bin/alpha.o main/alpha.cpp -I src -I /usr/include/eigen3 
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/alpha.o main/alpha.cpp -I src -I /usr/include/eigen3 
 echo executable... bin/alpha.o [bin/alpha.exe]
-g++ -std=c++11 -g -O3  -fPIC -o bin/alpha.exe bin/alpha.o -I src -I /usr/include/eigen3 -L lib -l BIU 
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -o bin/alpha.exe bin/alpha.o -I src -I /usr/include/eigen3 -L lib -l BIU -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
 echo compiling... main/cintilador.cpp [bin/cintilador.o]
-g++ -std=c++11 -g -O3  -fPIC -c -o bin/cintilador.o main/cintilador.cpp -I src -I /usr/include/eigen3 
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/cintilador.o main/cintilador.cpp -I src -I /usr/include/eigen3 
 echo executable... bin/cintilador.o [bin/cintilador.exe]
-g++ -std=c++11 -g -O3  -fPIC -o bin/cintilador.exe bin/cintilador.o -I src -I /usr/include/eigen3 -L lib -l BIU 
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -o bin/cintilador.exe bin/cintilador.o -I src -I /usr/include/eigen3 -L lib -l BIU -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
 echo compiling... main/geiger.cpp [bin/geiger.o]
-g++ -std=c++11 -g -O3  -fPIC -c -o bin/geiger.o main/geiger.cpp -I src -I /usr/include/eigen3 
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/geiger.o main/geiger.cpp -I src -I /usr/include/eigen3 
 echo executable... bin/geiger.o [bin/geiger.exe]
-g++ -std=c++11 -g -O3  -fPIC -o bin/geiger.exe bin/geiger.o -I src -I /usr/include/eigen3 -L lib -l BIU 
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -o bin/geiger.exe bin/geiger.o -I src -I /usr/include/eigen3 -L lib -l BIU -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
 echo compiling... main/lab1.cpp [bin/lab1.o]
-g++ -std=c++11 -g -O3  -fPIC -c -o bin/lab1.o main/lab1.cpp -I src -I /usr/include/eigen3 
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/lab1.o main/lab1.cpp -I src -I /usr/include/eigen3 
 echo executable... bin/lab1.o [bin/lab1.exe]
-g++ -std=c++11 -g -O3  -fPIC -o bin/lab1.exe bin/lab1.o -I src -I /usr/include/eigen3 -L lib -l BIU 
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -o bin/lab1.exe bin/lab1.o -I src -I /usr/include/eigen3 -L lib -l BIU -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
 echo compiling... main/lab1b.cpp [bin/lab1b.o]
-g++ -std=c++11 -g -O3  -fPIC -c -o bin/lab1b.o main/lab1b.cpp -I src -I /usr/include/eigen3 
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/lab1b.o main/lab1b.cpp -I src -I /usr/include/eigen3 
 echo executable... bin/lab1b.o [bin/lab1b.exe]
-g++ -std=c++11 -g -O3  -fPIC -o bin/lab1b.exe bin/lab1b.o -I src -I /usr/include/eigen3 -L lib -l BIU 
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -o bin/lab1b.exe bin/lab1b.o -I src -I /usr/include/eigen3 -L lib -l BIU -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
 echo compiling... main/mcalab1.cpp [bin/mcalab1.o]
-g++ -std=c++11 -g -O3  -fPIC -c -o bin/mcalab1.o main/mcalab1.cpp -I src -I /usr/include/eigen3 
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/mcalab1.o main/mcalab1.cpp -I src -I /usr/include/eigen3 
 echo executable... bin/mcalab1.o [bin/mcalab1.exe]
-g++ -std=c++11 -g -O3  -fPIC -o bin/mcalab1.exe bin/mcalab1.o -I src -I /usr/include/eigen3 -L lib -l BIU 
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -o bin/mcalab1.exe bin/mcalab1.o -I src -I /usr/include/eigen3 -L lib -l BIU -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
 echo compiling... main/plateau1.cpp [bin/plateau1.o]
-g++ -std=c++11 -g -O3  -fPIC -c -o bin/plateau1.o main/plateau1.cpp -I src -I /usr/include/eigen3 
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/plateau1.o main/plateau1.cpp -I src -I /usr/include/eigen3 
 echo executable... bin/plateau1.o [bin/plateau1.exe]
-g++ -std=c++11 -g -O3  -fPIC -o bin/plateau1.exe bin/plateau1.o -I src -I /usr/include/eigen3 -L lib -l BIU 
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -o bin/plateau1.exe bin/plateau1.o -I src -I /usr/include/eigen3 -L lib -l BIU -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
 echo compiling... main/plateau2.cpp [bin/plateau2.o]
-g++ -std=c++11 -g -O3  -fPIC -c -o bin/plateau2.o main/plateau2.cpp -I src -I /usr/include/eigen3 
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/plateau2.o main/plateau2.cpp -I src -I /usr/include/eigen3 
 echo executable... bin/plateau2.o [bin/plateau2.exe]
-g++ -std=c++11 -g -O3  -fPIC -o bin/plateau2.exe bin/plateau2.o -I src -I /usr/include/eigen3 -L lib -l BIU 
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -o bin/plateau2.exe bin/plateau2.o -I src -I /usr/include/eigen3 -L lib -l BIU -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
 echo compiling... main/sil.cpp [bin/sil.o]
-g++ -std=c++11 -g -O3  -fPIC -c -o bin/sil.o main/sil.cpp -I src -I /usr/include/eigen3 
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/sil.o main/sil.cpp -I src -I /usr/include/eigen3 
 echo executable... bin/sil.o [bin/sil.exe]
-g++ -std=c++11 -g -O3  -fPIC -o bin/sil.exe bin/sil.o -I src -I /usr/include/eigen3 -L lib -l BIU 
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -o bin/sil.exe bin/sil.o -I src -I /usr/include/eigen3 -L lib -l BIU -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
 echo compiling... main/tFitter.cpp [bin/tFitter.o]
-g++ -std=c++11 -g -O3  -fPIC -c -o bin/tFitter.o main/tFitter.cpp -I src -I /usr/include/eigen3 
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/tFitter.o main/tFitter.cpp -I src -I /usr/include/eigen3 
 echo executable... bin/tFitter.o [bin/tFitter.exe]
-g++ -std=c++11 -g -O3  -fPIC -o bin/tFitter.exe bin/tFitter.o -I src -I /usr/include/eigen3 -L lib -l BIU 
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -o bin/tFitter.exe bin/tFitter.o -I src -I /usr/include/eigen3 -L lib -l BIU -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
 echo compiling... main/tfit.cpp [bin/tfit.o]
-g++ -std=c++11 -g -O3  -fPIC -c -o bin/tfit.o main/tfit.cpp -I src -I /usr/include/eigen3 
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/tfit.o main/tfit.cpp -I src -I /usr/include/eigen3 
 echo executable... bin/tfit.o [bin/tfit.exe]
-g++ -std=c++11 -g -O3  -fPIC -o bin/tfit.exe bin/tfit.o -I src -I /usr/include/eigen3 -L lib -l BIU 
-rm bin/alpha.o bin/mcalab1.o bin/plateau1.o bin/geiger.o bin/cintilador.o bin/lab1b.o bin/tfit.o bin/plateau2.o bin/tFitter.o bin/lab1.o bin/sil.o
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -o bin/tfit.exe bin/tfit.o -I src -I /usr/include/eigen3 -L lib -l BIU -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
+rm bin/alpha.o bin/mcalab1.o bin/ajustealpha.o bin/plateau1.o bin/geiger.o bin/cintilador.o bin/lab1b.o bin/tfit.o bin/plateau2.o bin/tFitter.o bin/lab1.o bin/sil.o
 make: Leaving directory '/home/joaobiu/LFEA'
  
-make: root-config: No such file or directory
-make: root-config: No such file or directory
-make: root-config: No such file or directory
-
