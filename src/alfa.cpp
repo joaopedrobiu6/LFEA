@@ -89,7 +89,7 @@ void GraphMaker(std::vector<std::vector<float>> data, const char *title, const c
     TGraphErrors gr(n, x, y, ex, ey);
     gr.SetTitle(title);
     gr.SetMarkerColor(color);
-    gr.SetMarkerSize(1.5);
+    // gr.SetMarkerSize(1);
     gr.SetMarkerStyle(21);
 
     TF1 *f = new TF1("func", expr, x[0], x[data.size()]);
