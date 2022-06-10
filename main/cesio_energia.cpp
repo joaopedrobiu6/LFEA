@@ -13,7 +13,7 @@ int main()
     TRootCanvas *r = (TRootCanvas *)c.GetCanvasImp();
     r->Connect("CloseWindow()", "TApplication", gApplication, "Terminate()");
 
-    TH1D h("Dados", "Dados", 200, 0, 199);
+    TH1D h("Dados", "Dados", 200, 23.55, 199 * 5.13 + 23.55);
 
     h.SetFillColor(kBlue);
     h.SetMarkerStyle(kFullDiamond);
@@ -23,7 +23,7 @@ int main()
     gStyle->SetStatY(0);
     gStyle->SetStatX(0);
 
-    h.SetTitle("Espectro de Energia ^{137}Cs;CHN;Eventos");
+    h.SetTitle("Espectro de Energia ^{137}Cs;Energia [keV];Eventos");
 
     for (int i = 0; i < data.size(); i++)
     {
@@ -31,12 +31,12 @@ int main()
     }
     h.Draw("P");
 
-    auto line = new TLine(116.29, 100, 116.29, 1300);
+    auto line = new TLine(620, 100, 620, 1300);
     line->SetLineColor(kRed);
     line->SetLineWidth(2);
     line->Draw("SAME");
 
-    auto menor = new TLine(113.59, 100, 113.59, 1300);
+    /* auto menor = new TLine(113.59, 100, 113.59, 1300);
     menor->SetLineColor(kRed);
     menor->SetLineWidth(1.5);
     menor->SetLineStyle(9);
@@ -46,11 +46,11 @@ int main()
     maior->SetLineColor(kRed);
     maior->SetLineWidth(1.5);
     maior->SetLineStyle(9);
-    maior->Draw("SAME");
+    maior->Draw("SAME"); */
 
     TLegend legend(0.45, 0.73, 0.8, 0.8);
-    legend.AddEntry(line, "CHN 116.29 - Pico de Convers#tilde{a}o do ^{137}Cs (620 keV)");
-    legend.AddEntry(maior, "Incerteza de 2.7 CHN");
+    legend.AddEntry(line, "Pico de Convers#tilde{a}o do ^{137}Cs (620 keV)");
+    //legend.AddEntry(maior, "Incerteza de 2.7 CHN");
 
     legend.Draw();
 
