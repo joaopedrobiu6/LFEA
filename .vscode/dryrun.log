@@ -1,5 +1,6 @@
 make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/joaobiu/LFEA'
+ 
 echo compiling... src/DataPoints.cpp [bin/DataPoints.o]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/DataPoints.o src/DataPoints.cpp -I src -I /usr/include/eigen3 
 echo compiling... src/DataReader.cpp [bin/DataReader.o]
@@ -37,6 +38,10 @@ echo compiling... main/calib_beta.cpp [bin/calib_beta.o]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/calib_beta.o main/calib_beta.cpp -I src -I /usr/include/eigen3 
 echo executable... bin/calib_beta.o [bin/calib_beta.exe]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -o bin/calib_beta.exe bin/calib_beta.o -I src -I /usr/include/eigen3 -L lib -l BIU -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
+echo compiling... main/calib_gamma.cpp [bin/calib_gamma.o]
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/calib_gamma.o main/calib_gamma.cpp -I src -I /usr/include/eigen3 
+echo executable... bin/calib_gamma.o [bin/calib_gamma.exe]
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -o bin/calib_gamma.exe bin/calib_gamma.o -I src -I /usr/include/eigen3 -L lib -l BIU -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
 echo compiling... main/cesio_energia.cpp [bin/cesio_energia.o]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/cesio_energia.o main/cesio_energia.cpp -I src -I /usr/include/eigen3 
 echo executable... bin/cesio_energia.o [bin/cesio_energia.exe]
@@ -97,6 +102,6 @@ echo compiling... main/tfit.cpp [bin/tfit.o]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/tfit.o main/tfit.cpp -I src -I /usr/include/eigen3 
 echo executable... bin/tfit.o [bin/tfit.exe]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -o bin/tfit.exe bin/tfit.o -I src -I /usr/include/eigen3 -L lib -l BIU -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
-rm bin/alpha.o bin/aux.o bin/cesio_energia.o bin/mcalab1.o bin/ajustealpha.o bin/spec_cal.o bin/plateau1.o bin/geiger.o bin/cintilador.o bin/fermi.o bin/lab1b.o bin/tfit.o bin/calib_beta.o bin/plateau2.o bin/tFitter.o bin/talio.o bin/calib2_beta.o bin/kurie.o bin/lab1.o bin/sil.o bin/bismuto.o
+rm bin/alpha.o bin/aux.o bin/cesio_energia.o bin/mcalab1.o bin/ajustealpha.o bin/spec_cal.o bin/plateau1.o bin/geiger.o bin/cintilador.o bin/fermi.o bin/lab1b.o bin/calib_gamma.o bin/tfit.o bin/calib_beta.o bin/plateau2.o bin/tFitter.o bin/talio.o bin/calib2_beta.o bin/kurie.o bin/lab1.o bin/sil.o bin/bismuto.o
 make: Leaving directory '/home/joaobiu/LFEA'
  
