@@ -7,6 +7,6 @@ int main()
     {
         data[i][2] = data[i][2] / 2.35;
     }
-    GraphMaker(data, "Calib Gamma", "pol1", "AP", 60);
+        GraphMaker(data, "Calibrac#tilde{a}o 1;CHN;Energy [keV]", "pol1", "AP", kRedBlue);
     return 0;
 }
