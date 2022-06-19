@@ -128,7 +128,7 @@ void hist2::MakeHist(const char *name, const char *filename, const char *x_name,
         std::cout << "Chi2: " << chi2 << std::endl;
     }
 
-    histogram->Draw("E1");
+    histogram->Draw();
     c->Update();
     c->SaveAs(filename);
 
