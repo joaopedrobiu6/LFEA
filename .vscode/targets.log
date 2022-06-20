@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jun 19 18:38:22 2022
+# Make data base, printed on Mon Jun 20 01:20:38 2022
 
 # Variables
 
@@ -25,7 +25,7 @@ SNAP_INSTANCE_KEY =
 # environment
 JUPYTER_PATH = /home/joaobiu/root/etc/notebook
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-f574d882-5c17-401d-8a79-85b6782db05e.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-68eca618-d8be-4e39-9d04-76e24387e022.sock
 # makefile (from 'Makefile', line 18)
 VPATH = main:src
 # environment
@@ -73,7 +73,7 @@ XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.902ON1
 # default
 .INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
 # environment
-GNOME_TERMINAL_SERVICE = :1.212
+GNOME_TERMINAL_SERVICE = :1.871
 # makefile
 MAKEFLAGS = pqrR
 # makefile
@@ -113,7 +113,7 @@ ROOT_LIB := -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGr
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 21984
+VSCODE_PID = 54117
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
@@ -155,7 +155,7 @@ LD_LIBRARY_PATH = /home/joaobiu/root/lib
 # environment
 SHLVL = 1
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/764444c9_f8f5_4730_98ba_c2d5c67f993b
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/eb45e0f0_412e_4731_bcfd_4b2c4b5b02f2
 # environment
 MAKELEVEL := 0
 # default
@@ -207,7 +207,7 @@ LOGNAME = joaobiu
 # environment
 SNAP_ARCH = amd64
 # makefile (from 'Makefile', line 10)
-EXES :=  bin/a_ajuste.exe  bin/a_alpha.exe  bin/b_aux.exe  bin/b_bismuto.exe  bin/b_calib1.exe  bin/b_calib2.exe  bin/b_cesio_energia.exe  bin/b_fermi.exe  bin/b_kurie.exe  bin/b_spec_cal.exe  bin/b_talio.exe  bin/g_cal_root.exe  bin/g_calib1.exe  bin/g_calib2.exe  bin/g_co1.exe  bin/g_cs1.exe  bin/g_cs1_e.exe  bin/i_cintilador.exe  bin/i_lab1.exe  bin/i_lab1b.exe  bin/i_mcalab1.exe  bin/i_sil.exe  bin/m_geiger.exe  bin/m_plateau1.exe  bin/m_plateau2.exe  bin/tFitter.exe  bin/tfit.exe
+EXES :=  bin/a_ajuste.exe  bin/a_alpha.exe  bin/b_aux.exe  bin/b_bismuto.exe  bin/b_calib1.exe  bin/b_calib2.exe  bin/b_cesio_energia.exe  bin/b_fermi.exe  bin/b_kurie.exe  bin/b_spec_cal.exe  bin/b_talio.exe  bin/g_back1.exe  bin/g_cal_root.exe  bin/g_calib1.exe  bin/g_calib2.exe  bin/g_co1.exe  bin/g_co2.exe  bin/g_cs1.exe  bin/g_cs1_e.exe  bin/g_cs2.exe  bin/g_unk2.exe  bin/i_cintilador.exe  bin/i_lab1.exe  bin/i_lab1b.exe  bin/i_mcalab1.exe  bin/i_sil.exe  bin/m_countshist.exe  bin/m_geiger.exe  bin/m_plateau1.exe  bin/m_plateau2.exe  bin/tFitter.exe  bin/tfit.exe
 # makefile
 .DEFAULT_GOAL := all
 # environment
@@ -275,9 +275,9 @@ ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 VTE_VERSION = 6800
 # environment
+ 
 SNAP_COMMON = /var/snap/code/common
 # makefile (from 'Makefile', line 4)
- 
 CXXFLAGS := -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
@@ -303,12 +303,12 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # main/bin: could not be stat'd.
 # src/bin: could not be stat'd.
 # src (device 66309, inode 4331421): 12 files, no impossibilities.
-# . (device 66309, inode 4326667): 24 files, no impossibilities.
-# main (device 66309, inode 4331406): 32 files, no impossibilities.
-# bin (device 66309, inode 4331295): 55 files, no impossibilities.
+# . (device 66309, inode 4326667): 30 files, no impossibilities.
+# main (device 66309, inode 4331406): 37 files, no impossibilities.
+# bin (device 66309, inode 4331295): 39 files, no impossibilities.
 # lib (device 66309, inode 4331404): No files, no impossibilities so far.
 
-# 123 files, no impossibilities in 7 directories.
+# 118 files, no impossibilities in 7 directories.
 
 # Implicit Rules
 
@@ -368,7 +368,7 @@ main/b_cesio_energia.cpp:
 bin/g_cs1_e.exe: bin/g_cs1_e.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'g_cs1_e'
-#  Last modified 2022-06-18 12:10:15.435637757
+#  Last modified 2022-06-19 20:14:39.450781652
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -392,17 +392,27 @@ main/b_calib2.cpp:
 bin/b_fermi.exe: bin/b_fermi.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'b_fermi'
-#  Last modified 2022-06-18 01:19:11.660951756
+#  Last modified 2022-06-19 20:14:19.53456995
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
 	@echo executable... $< [$@]
 		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
 
+bin/m_countshist.o: main/m_countshist.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'm_countshist'
+#  File is an intermediate prerequisite.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 34):
+	@echo compiling... $< [$@]
+		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
+
 bin/b_spec_cal.exe: bin/b_spec_cal.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'b_spec_cal'
-#  Last modified 2022-06-18 01:19:15.600984585
+#  Last modified 2022-06-19 20:14:23.570612862
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -412,14 +422,14 @@ bin/b_spec_cal.exe: bin/b_spec_cal.o lib/libBIU.a
 # Not a target:
 main/g_calib2.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 00:50:19.931802396
+#  Last modified 2022-06-19 21:24:33.04608718
 #  File has been updated.
 #  Successfully updated.
 
 bin/g_cs1.exe: bin/g_cs1.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'g_cs1'
-#  Last modified 2022-06-18 11:27:37.574545499
+#  Last modified 2022-06-19 20:14:37.490760824
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -446,6 +456,23 @@ dump:
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 42):
 	@echo SRCS...[$(SRCS)] [$(OBJS)] [$(EXES)]
+
+# Not a target:
+main/g_cs2.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-19 19:17:59.869000539
+#  File has been updated.
+#  Successfully updated.
+
+bin/g_cs2.exe: bin/g_cs2.o lib/libBIU.a
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'g_cs2'
+#  Last modified 2022-06-19 20:14:41.438802777
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	@echo executable... $< [$@]
+		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
 
 # Not a target:
 main/i_lab1.cpp:
@@ -482,7 +509,7 @@ bin/g_co1.o: main/g_co1.cpp
 bin/b_talio.exe: bin/b_talio.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'b_talio'
-#  Last modified 2022-06-18 01:19:17.561000912
+#  Last modified 2022-06-19 20:14:25.56263404
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -513,7 +540,7 @@ main/m_plateau2.cpp:
 bin/tfit.exe: bin/tfit.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'tfit'
-#  Last modified 2022-06-18 01:19:45.585234043
+#  Last modified 2022-06-19 20:15:01.903020157
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -528,7 +555,18 @@ lib: lib/libBIU.a
 bin/g_co1.exe: bin/g_co1.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'g_co1'
-#  Last modified 2022-06-18 01:19:23.501050375
+#  Last modified 2022-06-19 20:14:33.574719206
+#  File has been updated.
+#  Successfully updated.
+ 
+#  recipe to execute (from 'Makefile', line 30):
+	@echo executable... $< [$@]
+		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
+
+bin/g_co2.exe: bin/g_co2.o lib/libBIU.a
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'g_co2'
+#  Last modified 2022-06-19 20:14:35.526739952
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -572,7 +610,6 @@ src/alfa.cpp:
 #  Implicit rule search has been done.
 #  Last modified 2022-06-18 01:18:51.296781887
 #  File has been updated.
- 
 #  Successfully updated.
 
 bin/b_cesio_energia.o: main/b_cesio_energia.cpp
@@ -595,7 +632,7 @@ main/i_cintilador.cpp:
 bin/m_plateau1.exe: bin/m_plateau1.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'm_plateau1'
-#  Last modified 2022-06-18 01:19:41.55720057
+#  Last modified 2022-06-19 20:14:57.738975935
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -619,17 +656,24 @@ main/b_calib1.cpp:
 bin/b_bismuto.exe: bin/b_bismuto.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'b_bismuto'
-#  Last modified 2022-06-18 01:19:03.688885295
+#  Last modified 2022-06-19 20:14:11.430483768
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
 	@echo executable... $< [$@]
 		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
 
+# Not a target:
+main/g_back1.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-20 01:01:42.585522723
+#  File has been updated.
+#  Successfully updated.
+
 bin/b_calib1.exe: bin/b_calib1.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'b_calib1'
-#  Last modified 2022-06-18 01:19:05.728902306
+#  Last modified 2022-06-19 20:14:13.422504954
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -640,7 +684,7 @@ bin/DataPoints.o: src/DataPoints.cpp
 #  Precious file (prerequisite of .PRECIOUS).
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'DataPoints'
-#  Last modified 2022-06-17 13:35:22.68326155
+#  Last modified 2022-06-19 19:13:00.12623342
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 34):
@@ -667,17 +711,27 @@ bin/g_calib1.o: main/g_calib1.cpp
 bin/b_kurie.exe: bin/b_kurie.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'b_kurie'
-#  Last modified 2022-06-18 01:19:13.624968122
+#  Last modified 2022-06-19 20:14:21.550591386
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
 	@echo executable... $< [$@]
 		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
 
+bin/g_co2.o: main/g_co2.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'g_co2'
+#  File is an intermediate prerequisite.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 34):
+	@echo compiling... $< [$@]
+		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
+
 bin/g_cal_root.exe: bin/g_cal_root.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'g_cal_root'
-#  Last modified 2022-06-18 11:38:28.407303796
+#  Last modified 2022-06-19 20:14:31.578697991
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -688,12 +742,19 @@ bin/hist.o: src/hist.cpp
 #  Precious file (prerequisite of .PRECIOUS).
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'hist'
-#  Last modified 2022-06-17 13:35:30.015323056
+#  Last modified 2022-06-19 20:14:03.478399181
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 34):
 	@echo compiling... $< [$@]
 		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
+
+# Not a target:
+main/m_countshist.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-19 20:11:40.724876573
+#  File has been updated.
+#  Successfully updated.
 
 bin/a_alpha.o: main/a_alpha.cpp
 #  Implicit rule search has been done.
@@ -705,11 +766,21 @@ bin/a_alpha.o: main/a_alpha.cpp
 	@echo compiling... $< [$@]
 		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
 
+bin/g_cs2.o: main/g_cs2.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'g_cs2'
+#  File is an intermediate prerequisite.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 34):
+	@echo compiling... $< [$@]
+		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
+
 bin/Fitter.o: src/Fitter.cpp
 #  Precious file (prerequisite of .PRECIOUS).
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'Fitter'
-#  Last modified 2022-06-17 13:35:27.999306144
+#  Last modified 2022-06-19 19:13:04.110269809
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 34):
@@ -729,7 +800,7 @@ bin/a_ajuste.o: main/a_ajuste.cpp
 # Not a target:
 src/hist.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-05 17:45:24.797938485
+#  Last modified 2022-06-19 20:13:58.710348452
 #  File has been updated.
 #  Successfully updated.
 
@@ -737,7 +808,7 @@ bin/DataReader.o: src/DataReader.cpp
 #  Precious file (prerequisite of .PRECIOUS).
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'DataReader'
-#  Last modified 2022-06-17 13:35:25.195282622
+#  Last modified 2022-06-19 19:13:01.826248946
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 34):
@@ -747,9 +818,19 @@ bin/DataReader.o: src/DataReader.cpp
 # Not a target:
 main/g_calib1.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 00:43:33.488843964
+#  Last modified 2022-06-19 21:24:14.853894514
 #  File has been updated.
 #  Successfully updated.
+
+bin/g_back1.o: main/g_back1.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'g_back1'
+#  File is an intermediate prerequisite.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 34):
+	@echo compiling... $< [$@]
+		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
 
 bin/i_lab1b.o: main/i_lab1b.cpp
 #  Implicit rule search has been done.
@@ -757,6 +838,7 @@ bin/i_lab1b.o: main/i_lab1b.cpp
 #  File is an intermediate prerequisite.
 #  File does not exist.
 #  File has not been updated.
+ 
 #  recipe to execute (from 'Makefile', line 34):
 	@echo compiling... $< [$@]
 		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
@@ -780,7 +862,7 @@ bin/m_plateau2.o: main/m_plateau2.cpp
 bin/a_ajuste.exe: bin/a_ajuste.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'a_ajuste'
-#  Last modified 2022-06-18 01:18:57.772835942
+#  Last modified 2022-06-19 20:14:05.474420415
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -800,14 +882,14 @@ bin/b_spec_cal.o: main/b_spec_cal.cpp
 bin/g_calib2.exe: bin/g_calib2.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'g_calib2'
-#  Last modified 2022-06-18 01:19:21.501033724
+#  Last modified 2022-06-19 21:24:39.586156452
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
 	@echo executable... $< [$@]
 		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
 
-all: bin/a_ajuste.exe bin/a_alpha.exe bin/b_aux.exe bin/b_bismuto.exe bin/b_calib1.exe bin/b_calib2.exe bin/b_cesio_energia.exe bin/b_fermi.exe bin/b_kurie.exe bin/b_spec_cal.exe bin/b_talio.exe bin/g_cal_root.exe bin/g_calib1.exe bin/g_calib2.exe bin/g_co1.exe bin/g_cs1.exe bin/g_cs1_e.exe bin/i_cintilador.exe bin/i_lab1.exe bin/i_lab1b.exe bin/i_mcalab1.exe bin/i_sil.exe bin/m_geiger.exe bin/m_plateau1.exe bin/m_plateau2.exe bin/tFitter.exe bin/tfit.exe
+all: bin/a_ajuste.exe bin/a_alpha.exe bin/b_aux.exe bin/b_bismuto.exe bin/b_calib1.exe bin/b_calib2.exe bin/b_cesio_energia.exe bin/b_fermi.exe bin/b_kurie.exe bin/b_spec_cal.exe bin/b_talio.exe bin/g_back1.exe bin/g_cal_root.exe bin/g_calib1.exe bin/g_calib2.exe bin/g_co1.exe bin/g_co2.exe bin/g_cs1.exe bin/g_cs1_e.exe bin/g_cs2.exe bin/g_unk2.exe bin/i_cintilador.exe bin/i_lab1.exe bin/i_lab1b.exe bin/i_mcalab1.exe bin/i_sil.exe bin/m_countshist.exe bin/m_geiger.exe bin/m_plateau1.exe bin/m_plateau2.exe bin/tFitter.exe bin/tfit.exe
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
@@ -824,7 +906,7 @@ main/b_bismuto.cpp:
 bin/g_calib1.exe: bin/g_calib1.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'g_calib1'
-#  Last modified 2022-06-18 01:19:19.533017336
+#  Last modified 2022-06-19 21:24:37.622135649
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -834,7 +916,7 @@ bin/g_calib1.exe: bin/g_calib1.o lib/libBIU.a
 bin/tFitter.exe: bin/tFitter.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'tFitter'
-#  Last modified 2022-06-18 01:19:47.597250759
+#  Last modified 2022-06-19 20:15:03.92704165
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -851,6 +933,16 @@ bin/tfit.o: main/tfit.cpp
 	@echo compiling... $< [$@]
 		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
 
+bin/g_unk2.exe: bin/g_unk2.o lib/libBIU.a
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'g_unk2'
+#  Last modified 2022-06-20 00:51:36.222110354
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	@echo executable... $< [$@]
+		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
+
 bin/i_sil.o: main/i_sil.cpp
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'i_sil'
@@ -865,9 +957,18 @@ bin/i_sil.o: main/i_sil.cpp
 src/DataReader.cpp:
 #  Implicit rule search has been done.
 #  Last modified 2022-06-05 17:45:24.797938485
- 
 #  File has been updated.
 #  Successfully updated.
+
+bin/g_back1.exe: bin/g_back1.o lib/libBIU.a
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'g_back1'
+#  Last modified 2022-06-20 01:01:49.513603428
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	@echo executable... $< [$@]
+		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
 
 bin/i_cintilador.o: main/i_cintilador.cpp
 #  Implicit rule search has been done.
@@ -882,7 +983,7 @@ bin/i_cintilador.o: main/i_cintilador.cpp
 bin/a_alpha.exe: bin/a_alpha.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'a_alpha'
-#  Last modified 2022-06-18 01:18:59.748852429
+#  Last modified 2022-06-19 20:14:07.454441477
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -919,10 +1020,17 @@ bin/tFitter.o: main/tFitter.cpp
 	@echo compiling... $< [$@]
 		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
 
+# Not a target:
+main/g_co2.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-19 19:21:48.283137933
+#  File has been updated.
+#  Successfully updated.
+
 bin/b_cesio_energia.exe: bin/b_cesio_energia.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'b_cesio_energia'
-#  Last modified 2022-06-18 01:19:09.660935087
+#  Last modified 2022-06-19 20:14:17.438547662
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -939,7 +1047,7 @@ main/tFitter.cpp:
 bin/i_lab1b.exe: bin/i_lab1b.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'i_lab1b'
-#  Last modified 2022-06-18 01:19:31.333115553
+#  Last modified 2022-06-19 20:14:45.382844683
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -983,7 +1091,7 @@ src/Fitter.cpp:
 bin/b_calib2.exe: bin/b_calib2.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'b_calib2'
-#  Last modified 2022-06-18 01:19:07.696918715
+#  Last modified 2022-06-19 20:14:15.422526224
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -993,7 +1101,7 @@ bin/b_calib2.exe: bin/b_calib2.o lib/libBIU.a
 bin/i_cintilador.exe: bin/i_cintilador.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'i_cintilador'
-#  Last modified 2022-06-18 01:19:29.393099412
+#  Last modified 2022-06-19 20:14:43.410823731
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -1003,7 +1111,7 @@ bin/i_cintilador.exe: bin/i_cintilador.o lib/libBIU.a
 bin/i_sil.exe: bin/i_sil.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'i_sil'
-#  Last modified 2022-06-18 01:19:37.269164922
+#  Last modified 2022-06-19 20:14:51.414908764
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -1018,12 +1126,13 @@ bin/g_cs1_e.o: main/g_cs1_e.cpp
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 34):
 	@echo compiling... $< [$@]
+ 
 		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
 
 # Not a target:
 main/g_cal_root.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 11:38:22.871258652
+#  Last modified 2022-06-19 19:26:29.357788206
 #  File has been updated.
 #  Successfully updated.
 
@@ -1034,10 +1143,20 @@ main/g_cs1.cpp:
 #  File has been updated.
 #  Successfully updated.
 
+bin/m_countshist.exe: bin/m_countshist.o lib/libBIU.a
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'm_countshist'
+#  Last modified 2022-06-19 20:14:53.354929372
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	@echo executable... $< [$@]
+		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
+
 bin/m_plateau2.exe: bin/m_plateau2.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'm_plateau2'
-#  Last modified 2022-06-18 01:19:43.661218056
+#  Last modified 2022-06-19 20:14:59.882998705
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -1047,7 +1166,7 @@ bin/m_plateau2.exe: bin/m_plateau2.o lib/libBIU.a
 bin/m_geiger.exe: bin/m_geiger.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'm_geiger'
-#  Last modified 2022-06-18 01:19:39.401182648
+#  Last modified 2022-06-19 20:14:55.562952824
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -1060,6 +1179,16 @@ main/i_lab1b.cpp:
 #  Last modified 2022-06-05 17:45:24.793938376
 #  File has been updated.
 #  Successfully updated.
+
+bin/g_unk2.o: main/g_unk2.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'g_unk2'
+#  File is an intermediate prerequisite.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 34):
+	@echo compiling... $< [$@]
+		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
 
 bin/g_cal_root.o: main/g_cal_root.cpp
 #  Implicit rule search has been done.
@@ -1074,7 +1203,7 @@ bin/g_cal_root.o: main/g_cal_root.cpp
 bin/i_lab1.exe: bin/i_lab1.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'i_lab1'
-#  Last modified 2022-06-18 01:19:33.457133221
+#  Last modified 2022-06-19 20:14:47.522867419
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -1119,7 +1248,7 @@ bin/alfa.o: src/alfa.cpp
 #  Precious file (prerequisite of .PRECIOUS).
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'alfa'
-#  Last modified 2022-06-18 01:18:55.796819452
+#  Last modified 2022-06-19 19:12:58.282216582
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 34):
@@ -1129,7 +1258,7 @@ bin/alfa.o: src/alfa.cpp
 lib/libBIU.a: bin/DataPoints.o bin/DataReader.o bin/Fitter.o bin/alfa.o bin/hist.o
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'libBIU'
-#  Last modified 2022-06-18 01:18:55.840819819
+#  Last modified 2022-06-19 20:14:03.510399521
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 25):
@@ -1140,7 +1269,7 @@ lib/libBIU.a: bin/DataPoints.o bin/DataReader.o bin/Fitter.o bin/alfa.o bin/hist
 bin/i_mcalab1.exe: bin/i_mcalab1.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'i_mcalab1'
-#  Last modified 2022-06-18 01:19:35.325148757
+#  Last modified 2022-06-19 20:14:49.390887263
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -1164,11 +1293,10 @@ main/i_mcalab1.cpp:
 #  File has been updated.
 #  Successfully updated.
 
- 
 bin/b_aux.exe: bin/b_aux.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'b_aux'
-#  Last modified 2022-06-18 01:19:01.728868947
+#  Last modified 2022-06-19 20:14:09.438462581
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -1209,8 +1337,15 @@ bin/g_calib2.o: main/g_calib2.cpp
 	@echo compiling... $< [$@]
 		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
 
+# Not a target:
+main/g_unk2.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-20 00:51:31.458048048
+#  File has been updated.
+#  Successfully updated.
+
 # files hash-table stats:
-# Load=100/1024=10%, Rehash=0, Collisions=51/888=6%
+# Load=115/1024=11%, Rehash=0, Collisions=75/1033=7%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
@@ -1218,12 +1353,12 @@ bin/g_calib2.o: main/g_calib2.cpp
 # General ('VPATH' variable) search path:
 # main:src
 
-# strcache buffers: 1 (0) / strings = 257 / storage = 3270 B / avg = 12 B
-# current buf: size = 8162 B / used = 3270 B / count = 257 / avg = 12 B
+# strcache buffers: 1 (0) / strings = 272 / storage = 3475 B / avg = 12 B
+# current buf: size = 8162 B / used = 3475 B / count = 272 / avg = 12 B
 
-# strcache performance: lookups = 528 / hit rate = 51%
+# strcache performance: lookups = 583 / hit rate = 53%
 # hash-table stats:
-# Load=257/8192=3%, Rehash=0, Collisions=1/528=0%
-# Finished Make data base on Sun Jun 19 18:38:22 2022
+# Load=272/8192=3%, Rehash=0, Collisions=1/583=0%
+# Finished Make data base on Mon Jun 20 01:20:38 2022
 
  
