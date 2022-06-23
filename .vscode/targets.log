@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jun 21 23:20:08 2022
+# Make data base, printed on Thu Jun 23 12:37:03 2022
 
 # Variables
 
@@ -14,7 +14,6 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 GDK_BACKEND = x11
 # environment
 LC_ALL = C
- 
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
@@ -26,13 +25,11 @@ SNAP_INSTANCE_KEY =
 # environment
 JUPYTER_PATH = /home/joaobiu/root/etc/notebook
 # environment
-GJS_DEBUG_OUTPUT = stderr
-# environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-866f6bc9-35be-40b3-913a-8d93938ddf75.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-dcbc7565-41eb-432c-9463-ada2b0423d16.sock
 # makefile (from 'Makefile', line 18)
 VPATH = main:src
 # environment
-VSCODE_CWD = /home/joaobiu
+VSCODE_CWD = /home/joaobiu/LFEA
 # environment
 JUPYTER_CONFIG_DIR = /home/joaobiu/root/etc/notebook
 # default
@@ -57,6 +54,8 @@ PWD = /home/joaobiu/LFEA
 %D = $(patsubst %/,%,$(dir $%))
 # environment
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+OLDPWD = /home/joaobiu
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
@@ -68,11 +67,13 @@ VSCODE_CODE_CACHE_PATH = /home/joaobiu/.config/Code/CachedData/30d9c6cd9483b2cc5
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.SS25N1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.AJNBO1
 # default
 .LOADED := 
 # default
 .INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# environment
+GNOME_TERMINAL_SERVICE = :1.169
 # makefile
 MAKEFLAGS = pqrR
 # makefile
@@ -112,19 +113,17 @@ ROOT_LIB := -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGr
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 2794
+VSCODE_PID = 8172
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
 DYLD_LIBRARY_PATH = /home/joaobiu/root/lib
-# environment
-BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # makefile (from 'Makefile', line 11)
 ROOT_INC := -I /home/joaobiu/root/include
 # environment
-SESSION_MANAGER = local/joaobiu-IdeaPad-5-15ARE05:@/tmp/.ICE-unix/1589,unix/joaobiu-IdeaPad-5-15ARE05:/tmp/.ICE-unix/1589
+SESSION_MANAGER = local/joaobiu-IdeaPad-5-15ARE05:@/tmp/.ICE-unix/1608,unix/joaobiu-IdeaPad-5-15ARE05:/tmp/.ICE-unix/1608
 # automatic
 *F = $(notdir $*)
 # environment
@@ -154,13 +153,11 @@ XMODIFIERS = @im=ibus
 # environment
 LD_LIBRARY_PATH = /home/joaobiu/root/lib
 # environment
-GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+SHLVL = 1
 # environment
-SHLVL = 0
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/31256f6a_909b_4c72_8b4f_988a7ce53422
 # environment
 MAKELEVEL := 0
-# environment
-IM_CONFIG_CHECK_ENV = 1
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
@@ -168,7 +165,7 @@ CLING_STANDARD_PCH = none
 # environment
 SNAP_COOKIE = 0zJzSDLUayawyk5YNzaGgI0tteaD1knKEIdio7wpWrb3ZxtZoRGS
 # environment
-PATH = /home/joaobiu/.local/bin:/home/joaobiu/root/bin:/home/joaobiu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+PATH = /home/joaobiu/root/bin:/home/joaobiu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
 # default
 MAKEFILES := 
 # environment
@@ -179,8 +176,6 @@ LANGUAGE = pt:pt_BR:en
 SNAP_USER_COMMON = /home/joaobiu/snap/code/common
 # environment
 SNAP = /snap/code/99
-# environment
-INVOCATION_ID = 25467147547142f6b4bd89f1c29d2264
 # environment
 SNAP_REVISION = 99
 # environment
@@ -198,7 +193,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 XDG_CURRENT_DESKTOP = Unity
 # environment
-LS_COLORS = 
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
 # automatic
 +F = $(notdir $+)
 # environment
@@ -210,15 +205,13 @@ GNUMAKEFLAGS :=
 # environment
 LOGNAME = joaobiu
 # environment
-GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
-# environment
 SNAP_ARCH = amd64
 # makefile (from 'Makefile', line 10)
-EXES :=  bin/a_ajuste.exe  bin/a_alpha.exe  bin/b_aux.exe  bin/b_bismuto.exe  bin/b_calib1.exe  bin/b_calib2.exe  bin/b_cesio_energia.exe  bin/b_fermi.exe  bin/b_kurie.exe  bin/b_spec_cal.exe  bin/b_talio.exe  bin/g2_calib.exe  bin/g_back1.exe  bin/g_cal_root.exe  bin/g_calib1.exe  bin/g_calib2.exe  bin/g_co1.exe  bin/g_co2.exe  bin/g_cs1.exe  bin/g_cs1_e.exe  bin/g_cs2.exe  bin/g_unk2.exe  bin/i_cintilador.exe  bin/i_lab1.exe  bin/i_lab1b.exe  bin/i_mcalab1.exe  bin/i_sil.exe  bin/m_countshist.exe  bin/m_geiger.exe  bin/m_plateau1.exe  bin/m_plateau2.exe  bin/tFitter.exe  bin/tfit.exe
+EXES :=  bin/g2_calib.exe  bin/g2_co_sem_fundo.exe  bin/g2_cs.exe
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 1607
+SYSTEMD_EXEC_PID = 1626
 # environment
 DISPLAY = :0
 # environment
@@ -236,21 +229,15 @@ SNAP_DATA = /var/snap/code/99
 # environment
 SNAP_CONTEXT = 0zJzSDLUayawyk5YNzaGgI0tteaD1knKEIdio7wpWrb3ZxtZoRGS
 # environment
-MANAGERPID = 1453
-# environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 2738
-# environment
 PYTHONPATH = /home/joaobiu/root/lib
 # makefile (from 'Makefile', line 13)
 EIGEN_INC := -I /usr/include/eigen3
 # environment
-_ = /snap/code/99/usr/share/code/code
-# environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-GDK_PIXBUF_MODULE_FILE = /home/joaobiu/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+COLORTERM = truecolor
 # environment
-JOURNAL_STREAM = 8:36316
+GDK_PIXBUF_MODULE_FILE = /home/joaobiu/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -263,6 +250,8 @@ QT_IM_MODULE = ibus
 ELECTRON_RUN_AS_NODE = 1
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-f8712f32-1.68.1-main.sock
+# environment
+TERM = xterm-256color
 # environment
 SNAP_NAME = code
 # environment
@@ -284,14 +273,16 @@ VSCODE_CLI = 1
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
+VTE_VERSION = 6800
+# environment
 SNAP_COMMON = /var/snap/code/common
+ 
 # makefile (from 'Makefile', line 4)
 CXXFLAGS := -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
 # makefile (from 'Makefile', line 3)
 CXX := g++ -std=c++11 -g -O3
- 
 # environment
 SNAP_USER_DATA = /home/joaobiu/snap/code/99
 # environment
@@ -301,7 +292,7 @@ GDMSESSION = ubuntu
 # environment
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # variable set hash-table stats:
-# Load=144/1024=14%, Rehash=0, Collisions=9/189=5%
+# Load=140/1024=14%, Rehash=0, Collisions=16/185=9%
 
 # Pattern-specific Variable Values
 
@@ -312,13 +303,12 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # main/bin: could not be stat'd.
 # src/bin: could not be stat'd.
 # src (device 66309, inode 4331421): 12 files, no impossibilities.
- 
-# . (device 66309, inode 4326667): 33 files, no impossibilities.
-# main (device 66309, inode 4331406): 38 files, no impossibilities.
-# bin (device 66309, inode 4331295): 40 files, no impossibilities.
+# . (device 66309, inode 4326667): 31 files, no impossibilities.
+# main (device 66309, inode 4331406): 7 files, no impossibilities.
+# bin (device 66309, inode 4331295): 42 files, no impossibilities.
 # lib (device 66309, inode 4331404): No files, no impossibilities so far.
 
-# 123 files, no impossibilities in 7 directories.
+# 92 files, no impossibilities in 7 directories.
 
 # Implicit Rules
 
@@ -341,110 +331,12 @@ bin/%.o: %.cpp
 # 3 implicit rules, 0 (0.0%) terminal.
 # Files
 
-bin/m_plateau1.o: main/m_plateau1.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'm_plateau1'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
 # Not a target:
-main/i_sil.cpp:
+main/g2_co_sem_fundo.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-05 17:45:24.793938376
+#  Last modified 2022-06-23 00:21:53.256129106
 #  File has been updated.
 #  Successfully updated.
-
-bin/b_aux.o: main/b_aux.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'b_aux'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-# Not a target:
-main/b_cesio_energia.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-11 13:17:40.968980018
-#  File has been updated.
-#  Successfully updated.
-
-bin/g_cs1_e.exe: bin/g_cs1_e.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'g_cs1_e'
-#  Last modified 2022-06-19 20:14:39.450781652
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-# Not a target:
-main/b_aux.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-11 22:16:50.921426167
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-main/b_calib2.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-10 02:49:59.005195136
-#  File has been updated.
-#  Successfully updated.
-
-bin/b_fermi.exe: bin/b_fermi.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'b_fermi'
-#  Last modified 2022-06-19 20:14:19.53456995
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-bin/m_countshist.o: main/m_countshist.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'm_countshist'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-bin/b_spec_cal.exe: bin/b_spec_cal.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'b_spec_cal'
-#  Last modified 2022-06-19 20:14:23.570612862
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-# Not a target:
-main/g_calib2.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-19 21:24:33.04608718
-#  File has been updated.
-#  Successfully updated.
-
-bin/g_cs1.exe: bin/g_cs1.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'g_cs1'
-#  Last modified 2022-06-19 20:14:37.490760824
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
 
 # Not a target:
 src/DataPoints.cpp:
@@ -456,16 +348,19 @@ src/DataPoints.cpp:
 # Not a target:
 main/g2_calib.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-21 18:22:24.666873479
+#  Last modified 2022-06-22 23:53:25.864487964
 #  File has been updated.
 #  Successfully updated.
 
-# Not a target:
-main/b_kurie.cpp:
+bin/g2_co_sem_fundo.o: main/g2_co_sem_fundo.cpp
 #  Implicit rule search has been done.
-#  Last modified 2022-06-11 21:48:15.899280488
-#  File has been updated.
-#  Successfully updated.
+#  Implicit/static pattern stem: 'g2_co_sem_fundo'
+#  File is an intermediate prerequisite.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 34):
+	@echo compiling... $< [$@]
+		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
 
 dump:
 #  Implicit rule search has not been done.
@@ -475,26 +370,9 @@ dump:
 	@echo SRCS...[$(SRCS)] [$(OBJS)] [$(EXES)]
 
 # Not a target:
-main/g_cs2.cpp:
+main/g2_cs.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-19 19:17:59.869000539
-#  File has been updated.
-#  Successfully updated.
-
-bin/g_cs2.exe: bin/g_cs2.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'g_cs2'
-#  Last modified 2022-06-19 20:14:41.438802777
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-# Not a target:
-main/i_lab1.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-05 17:45:24.793938376
+#  Last modified 2022-06-23 00:08:07.74024184
 #  File has been updated.
 #  Successfully updated.
 
@@ -503,43 +381,6 @@ main/i_lab1.cpp:
 #  Modification time never checked.
 #  File has not been updated.
 
-bin/m_geiger.o: main/m_geiger.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'm_geiger'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-bin/g_co1.o: main/g_co1.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'g_co1'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-bin/b_talio.exe: bin/b_talio.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'b_talio'
-#  Last modified 2022-06-19 20:14:25.56263404
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-# Not a target:
-main/b_fermi.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-11 20:39:51.008805067
-#  File has been updated.
-#  Successfully updated.
-
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
@@ -547,155 +388,35 @@ Makefile:
 #  File has been updated.
 #  Successfully updated.
 
-# Not a target:
-main/m_plateau2.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-05 17:45:24.793938376
-#  File has been updated.
-#  Successfully updated.
-
-bin/tfit.exe: bin/tfit.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'tfit'
-#  Last modified 2022-06-19 20:15:01.903020157
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
 lib: lib/libBIU.a
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
-bin/g_co1.exe: bin/g_co1.o lib/libBIU.a
+bin/g2_cs.exe: bin/g2_cs.o lib/libBIU.a
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'g_co1'
-#  Last modified 2022-06-19 20:14:33.574719206
+#  Implicit/static pattern stem: 'g2_cs'
+#  Last modified 2022-06-23 00:22:06.952001807
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
 	@echo executable... $< [$@]
 		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-bin/g_co2.exe: bin/g_co2.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'g_co2'
-#  Last modified 2022-06-19 20:14:35.526739952
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-# Not a target:
-main/m_geiger.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-06 00:00:18.337046243
-#  File has been updated.
-#  Successfully updated.
 
 clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 38):
- 
 	@echo cleaning...
 	rm -f $(wildcard bin/*) $(wildcard lib/*)
 
 # Not a target:
-main/tfit.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-05 17:45:24.793938376
-#  File has been updated.
-#  Successfully updated.
-
-bin/b_fermi.o: main/b_fermi.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'b_fermi'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-# Not a target:
 src/alfa.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 01:18:51.296781887
+#  Last modified 2022-06-23 00:21:16.308518649
 #  File has been updated.
 #  Successfully updated.
-
-bin/b_cesio_energia.o: main/b_cesio_energia.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'b_cesio_energia'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-# Not a target:
-main/i_cintilador.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-05 17:45:24.793938376
-#  File has been updated.
-#  Successfully updated.
-
-bin/m_plateau1.exe: bin/m_plateau1.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'm_plateau1'
-#  Last modified 2022-06-19 20:14:57.738975935
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-# Not a target:
-main/b_spec_cal.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-11 13:14:10.898976301
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-main/b_calib1.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-10 14:55:55.99091417
-#  File has been updated.
-#  Successfully updated.
-
-bin/b_bismuto.exe: bin/b_bismuto.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'b_bismuto'
-#  Last modified 2022-06-19 20:14:11.430483768
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-# Not a target:
-main/g_back1.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-20 01:01:42.585522723
-#  File has been updated.
-#  Successfully updated.
-
-bin/b_calib1.exe: bin/b_calib1.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'b_calib1'
-#  Last modified 2022-06-19 20:14:13.422504954
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
 
 bin/DataPoints.o: src/DataPoints.cpp
 #  Precious file (prerequisite of .PRECIOUS).
@@ -711,54 +432,17 @@ bin/DataPoints.o: src/DataPoints.cpp
 bin/g2_calib.exe: bin/g2_calib.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'g2_calib'
-#  Last modified 2022-06-21 18:22:31.874926315
+#  Last modified 2022-06-23 00:22:02.564041618
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
 	@echo executable... $< [$@]
 		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
 
-# Not a target:
-main/a_alpha.cpp:
+bin/g2_co_sem_fundo.exe: bin/g2_co_sem_fundo.o lib/libBIU.a
 #  Implicit rule search has been done.
-#  Last modified 2022-06-06 19:33:35.608924411
-#  File has been updated.
-#  Successfully updated.
-
-bin/g_calib1.o: main/g_calib1.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'g_calib1'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-bin/b_kurie.exe: bin/b_kurie.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'b_kurie'
-#  Last modified 2022-06-19 20:14:21.550591386
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-bin/g_co2.o: main/g_co2.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'g_co2'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-bin/g_cal_root.exe: bin/g_cal_root.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'g_cal_root'
-#  Last modified 2022-06-19 20:14:31.578697991
+#  Implicit/static pattern stem: 'g2_co_sem_fundo'
+#  Last modified 2022-06-23 00:22:04.816021072
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
@@ -776,33 +460,6 @@ bin/hist.o: src/hist.cpp
 	@echo compiling... $< [$@]
 		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
 
-# Not a target:
-main/m_countshist.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-19 20:11:40.724876573
-#  File has been updated.
-#  Successfully updated.
-
-bin/a_alpha.o: main/a_alpha.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'a_alpha'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-bin/g_cs2.o: main/g_cs2.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'g_cs2'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
 bin/Fitter.o: src/Fitter.cpp
 #  Precious file (prerequisite of .PRECIOUS).
 #  Implicit rule search has been done.
@@ -810,16 +467,6 @@ bin/Fitter.o: src/Fitter.cpp
 #  Last modified 2022-06-19 19:13:04.110269809
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-bin/a_ajuste.o: main/a_ajuste.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'a_ajuste'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
 #  recipe to execute (from 'Makefile', line 34):
 	@echo compiling... $< [$@]
 		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
@@ -843,80 +490,12 @@ bin/DataReader.o: src/DataReader.cpp
 		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
 
 # Not a target:
-main/g_calib1.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-19 21:24:14.853894514
-#  File has been updated.
-#  Successfully updated.
-
-bin/g_back1.o: main/g_back1.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'g_back1'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-bin/i_lab1b.o: main/i_lab1b.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'i_lab1b'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-bin/m_plateau2.o: main/m_plateau2.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'm_plateau2'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-# Not a target:
- 
 .DEFAULT:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
-bin/a_ajuste.exe: bin/a_ajuste.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'a_ajuste'
-#  Last modified 2022-06-19 20:14:05.474420415
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-bin/b_spec_cal.o: main/b_spec_cal.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'b_spec_cal'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-bin/g_calib2.exe: bin/g_calib2.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'g_calib2'
-#  Last modified 2022-06-19 21:24:39.586156452
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-all: bin/a_ajuste.exe bin/a_alpha.exe bin/b_aux.exe bin/b_bismuto.exe bin/b_calib1.exe bin/b_calib2.exe bin/b_cesio_energia.exe bin/b_fermi.exe bin/b_kurie.exe bin/b_spec_cal.exe bin/b_talio.exe bin/g2_calib.exe bin/g_back1.exe bin/g_cal_root.exe bin/g_calib1.exe bin/g_calib2.exe bin/g_co1.exe bin/g_co2.exe bin/g_cs1.exe bin/g_cs1_e.exe bin/g_cs2.exe bin/g_unk2.exe bin/i_cintilador.exe bin/i_lab1.exe bin/i_lab1b.exe bin/i_mcalab1.exe bin/i_sil.exe bin/m_countshist.exe bin/m_geiger.exe bin/m_plateau1.exe bin/m_plateau2.exe bin/tFitter.exe bin/tfit.exe
+all: bin/g2_calib.exe bin/g2_co_sem_fundo.exe bin/g2_cs.exe
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
@@ -924,187 +503,9 @@ all: bin/a_ajuste.exe bin/a_alpha.exe bin/b_aux.exe bin/b_bismuto.exe bin/b_cali
 #  Successfully updated.
 
 # Not a target:
-main/b_bismuto.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-11 19:09:01.612465949
-#  File has been updated.
-#  Successfully updated.
-
-bin/g_calib1.exe: bin/g_calib1.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'g_calib1'
-#  Last modified 2022-06-19 21:24:37.622135649
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-bin/tFitter.exe: bin/tFitter.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'tFitter'
-#  Last modified 2022-06-19 20:15:03.92704165
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-bin/tfit.o: main/tfit.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'tfit'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-bin/g_unk2.exe: bin/g_unk2.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'g_unk2'
-#  Last modified 2022-06-20 00:51:36.222110354
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-bin/i_sil.o: main/i_sil.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'i_sil'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-# Not a target:
 src/DataReader.cpp:
 #  Implicit rule search has been done.
 #  Last modified 2022-06-05 17:45:24.797938485
-#  File has been updated.
-#  Successfully updated.
-
-bin/g_back1.exe: bin/g_back1.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'g_back1'
-#  Last modified 2022-06-20 01:01:49.513603428
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-bin/i_cintilador.o: main/i_cintilador.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'i_cintilador'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-bin/a_alpha.exe: bin/a_alpha.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'a_alpha'
-#  Last modified 2022-06-19 20:14:07.454441477
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-bin/i_lab1.o: main/i_lab1.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'i_lab1'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-bin/i_mcalab1.o: main/i_mcalab1.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'i_mcalab1'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-bin/tFitter.o: main/tFitter.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'tFitter'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-# Not a target:
-main/g_co2.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-19 19:21:48.283137933
-#  File has been updated.
-#  Successfully updated.
-
-bin/b_cesio_energia.exe: bin/b_cesio_energia.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'b_cesio_energia'
-#  Last modified 2022-06-19 20:14:17.438547662
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-# Not a target:
-main/tFitter.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-05 17:45:24.793938376
-#  File has been updated.
-#  Successfully updated.
-
-bin/i_lab1b.exe: bin/i_lab1b.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'i_lab1b'
-#  Last modified 2022-06-19 20:14:45.382844683
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-bin/g_cs1.o: main/g_cs1.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'g_cs1'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-bin/b_talio.o: main/b_talio.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'b_talio'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-# Not a target:
-main/m_plateau1.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-05 17:45:24.793938376
 #  File has been updated.
 #  Successfully updated.
 
@@ -1115,155 +516,9 @@ src/Fitter.cpp:
 #  File has been updated.
 #  Successfully updated.
 
-bin/b_calib2.exe: bin/b_calib2.o lib/libBIU.a
+bin/g2_cs.o: main/g2_cs.cpp
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'b_calib2'
-#  Last modified 2022-06-19 20:14:15.422526224
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-bin/i_cintilador.exe: bin/i_cintilador.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'i_cintilador'
-#  Last modified 2022-06-19 20:14:43.410823731
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-bin/i_sil.exe: bin/i_sil.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'i_sil'
-#  Last modified 2022-06-19 20:14:51.414908764
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-bin/g_cs1_e.o: main/g_cs1_e.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'g_cs1_e'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-# Not a target:
-main/g_cal_root.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-19 19:26:29.357788206
- 
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-main/g_cs1.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-18 01:23:42.767187499
-#  File has been updated.
-#  Successfully updated.
-
-bin/m_countshist.exe: bin/m_countshist.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'm_countshist'
-#  Last modified 2022-06-19 20:14:53.354929372
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-bin/m_plateau2.exe: bin/m_plateau2.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'm_plateau2'
-#  Last modified 2022-06-19 20:14:59.882998705
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-bin/m_geiger.exe: bin/m_geiger.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'm_geiger'
-#  Last modified 2022-06-19 20:14:55.562952824
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-# Not a target:
-main/i_lab1b.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-05 17:45:24.793938376
-#  File has been updated.
-#  Successfully updated.
-
-bin/g_unk2.o: main/g_unk2.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'g_unk2'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-bin/g_cal_root.o: main/g_cal_root.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'g_cal_root'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-bin/i_lab1.exe: bin/i_lab1.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'i_lab1'
-#  Last modified 2022-06-19 20:14:47.522867419
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-# Not a target:
-main/a_ajuste.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-05 23:19:13.700876053
-#  File has been updated.
-#  Successfully updated.
-
-bin/b_calib1.o: main/b_calib1.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'b_calib1'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-# Not a target:
-main/g_cs1_e.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-18 12:10:06.735572444
-#  File has been updated.
-#  Successfully updated.
-
-bin/b_bismuto.o: main/b_bismuto.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'b_bismuto'
+#  Implicit/static pattern stem: 'g2_cs'
 #  File is an intermediate prerequisite.
 #  File does not exist.
 #  File has not been updated.
@@ -1275,7 +530,7 @@ bin/alfa.o: src/alfa.cpp
 #  Precious file (prerequisite of .PRECIOUS).
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'alfa'
-#  Last modified 2022-06-19 19:12:58.282216582
+#  Last modified 2022-06-23 00:22:00.428061327
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 34):
@@ -1285,50 +540,13 @@ bin/alfa.o: src/alfa.cpp
 lib/libBIU.a: bin/DataPoints.o bin/DataReader.o bin/Fitter.o bin/alfa.o bin/hist.o
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'libBIU'
-#  Last modified 2022-06-19 20:14:03.510399521
+#  Last modified 2022-06-23 00:22:00.468060956
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 25):
 	@echo making lib...[$^]
 		ar ruv $@ $^
 			ranlib $@
-
-bin/i_mcalab1.exe: bin/i_mcalab1.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'i_mcalab1'
-#  Last modified 2022-06-19 20:14:49.390887263
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-bin/b_calib2.o: main/b_calib2.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'b_calib2'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-# Not a target:
-main/i_mcalab1.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-05 17:45:24.793938376
-#  File has been updated.
-#  Successfully updated.
-
-bin/b_aux.exe: bin/b_aux.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'b_aux'
-#  Last modified 2022-06-19 20:14:09.438462581
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
 
 bin/g2_calib.o: main/g2_calib.cpp
 #  Implicit rule search has been done.
@@ -1340,49 +558,9 @@ bin/g2_calib.o: main/g2_calib.cpp
 	@echo compiling... $< [$@]
 		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
 
-# Not a target:
-main/b_talio.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-11 19:18:22.459198458
-#  File has been updated.
-#  Successfully updated.
-
-bin/b_kurie.o: main/b_kurie.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'b_kurie'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-# Not a target:
-main/g_co1.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-18 01:07:16.646665281
-#  File has been updated.
-#  Successfully updated.
-
-bin/g_calib2.o: main/g_calib2.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'g_calib2'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-# Not a target:
-main/g_unk2.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-20 00:51:31.458048048
-#  File has been updated.
-#  Successfully updated.
-
 # files hash-table stats:
-# Load=118/1024=12%, Rehash=0, Collisions=78/1062=7%
+ 
+# Load=28/1024=3%, Rehash=0, Collisions=1/192=1%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
@@ -1390,12 +568,12 @@ main/g_unk2.cpp:
 # General ('VPATH' variable) search path:
 # main:src
 
-# strcache buffers: 1 (0) / strings = 281 / storage = 3593 B / avg = 12 B
-# current buf: size = 8162 B / used = 3593 B / count = 281 / avg = 12 B
+# strcache buffers: 1 (0) / strings = 128 / storage = 1490 B / avg = 11 B
+# current buf: size = 8162 B / used = 1490 B / count = 128 / avg = 11 B
 
-# strcache performance: lookups = 600 / hit rate = 53%
+# strcache performance: lookups = 209 / hit rate = 38%
 # hash-table stats:
-# Load=281/8192=3%, Rehash=0, Collisions=1/600=0%
-# Finished Make data base on Tue Jun 21 23:20:08 2022
+# Load=128/8192=2%, Rehash=0, Collisions=0/209=0%
+# Finished Make data base on Thu Jun 23 12:37:03 2022
 
  
