@@ -42,8 +42,8 @@ void HistMaker(std::vector<std::vector<float>> data, bool wapp, int n, double mi
     h.SetMarkerColor(kBlue);
     h.SetLineColor(1);
 
-    gStyle->SetStatY(0);
-    gStyle->SetStatX(0); 
+    /* gStyle->SetStatY(0);
+    gStyle->SetStatX(0);  */
 
     h.SetTitle(title);
 
