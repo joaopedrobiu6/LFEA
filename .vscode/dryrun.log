@@ -33,10 +33,14 @@ echo compiling... main/g2_erro.cpp [bin/g2_erro.o]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/g2_erro.o main/g2_erro.cpp -I src -I /usr/include/eigen3 
 echo executable... bin/g2_erro.o [bin/g2_erro.exe]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -o bin/g2_erro.exe bin/g2_erro.o -I src -I /usr/include/eigen3 -L lib -l BIU -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
+echo compiling... main/grupo5B.cpp [bin/grupo5B.o]
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/grupo5B.o main/grupo5B.cpp -I src -I /usr/include/eigen3 
+echo executable... bin/grupo5B.o [bin/grupo5B.exe]
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -o bin/grupo5B.exe bin/grupo5B.o -I src -I /usr/include/eigen3 -L lib -l BIU -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
 echo compiling... main/ines.cpp [bin/ines.o]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/ines.o main/ines.cpp -I src -I /usr/include/eigen3 
 echo executable... bin/ines.o [bin/ines.exe]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -o bin/ines.exe bin/ines.o -I src -I /usr/include/eigen3 -L lib -l BIU -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
-rm bin/g2_co_sem_fundo.o bin/ines.o bin/g2_cs.o bin/g2_background.o bin/g2_erro.o bin/g2_calib.o
+rm bin/g2_co_sem_fundo.o bin/grupo5B.o bin/ines.o bin/g2_cs.o bin/g2_background.o bin/g2_erro.o bin/g2_calib.o
 make: Leaving directory '/home/joaobiu/LFEA'
  

@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Jun 25 11:08:09 2022
+# Make data base, printed on Sat Jun 25 20:58:08 2022
 
 # Variables
 
@@ -25,7 +25,7 @@ SNAP_INSTANCE_KEY =
 # environment
 JUPYTER_PATH = /home/joaobiu/root/etc/notebook
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-6fc4acdb-83d9-4bcb-a33e-8edbfd9dd5e4.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-191241ba-c66a-439b-84cd-470ca6b0a9b3.sock
 # makefile (from 'Makefile', line 18)
 VPATH = main:src
 # environment
@@ -67,13 +67,13 @@ VSCODE_CODE_CACHE_PATH = /home/joaobiu/.config/Code/CachedData/30d9c6cd9483b2cc5
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.GODDO1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.0MHIO1
 # default
 .LOADED := 
 # default
 .INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
 # environment
-GNOME_TERMINAL_SERVICE = :1.143
+GNOME_TERMINAL_SERVICE = :1.99
 # makefile
 MAKEFLAGS = pqrR
 # makefile
@@ -113,7 +113,7 @@ ROOT_LIB := -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGr
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 5280
+VSCODE_PID = 2313
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
@@ -123,7 +123,7 @@ DYLD_LIBRARY_PATH = /home/joaobiu/root/lib
 # makefile (from 'Makefile', line 11)
 ROOT_INC := -I /home/joaobiu/root/include
 # environment
-SESSION_MANAGER = local/joaobiu-IdeaPad-5-15ARE05:@/tmp/.ICE-unix/1622,unix/joaobiu-IdeaPad-5-15ARE05:/tmp/.ICE-unix/1622
+SESSION_MANAGER = local/joaobiu-IdeaPad-5-15ARE05:@/tmp/.ICE-unix/1581,unix/joaobiu-IdeaPad-5-15ARE05:/tmp/.ICE-unix/1581
 # automatic
 *F = $(notdir $*)
 # environment
@@ -155,7 +155,7 @@ LD_LIBRARY_PATH = /home/joaobiu/root/lib
 # environment
 SHLVL = 1
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/4275bbad_4c7d_4caf_98d1_0cacec41fcdd
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/3714b94c_88d1_411f_b285_36045aec1ba5
 # environment
 MAKELEVEL := 0
 # default
@@ -211,7 +211,7 @@ EXES :=  bin/g2_background.exe  bin/g2_calib.exe  bin/g2_co_sem_fundo.exe  bin/g
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 1641
+SYSTEMD_EXEC_PID = 1600
 # environment
 DISPLAY = :0
 # environment
@@ -275,6 +275,7 @@ ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 VTE_VERSION = 6800
 # environment
+ 
 SNAP_COMMON = /var/snap/code/common
 # makefile (from 'Makefile', line 4)
 CXXFLAGS := -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC
@@ -288,7 +289,6 @@ SNAP_USER_DATA = /home/joaobiu/snap/code/99
 XDG_MENU_PREFIX = gnome-
 # environment
 GDMSESSION = ubuntu
- 
 # environment
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # variable set hash-table stats:
@@ -303,12 +303,12 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # main/bin: could not be stat'd.
 # src/bin: could not be stat'd.
 # src (device 66309, inode 4331421): 12 files, no impossibilities.
-# . (device 66309, inode 4326667): 44 files, no impossibilities.
+# . (device 66309, inode 4326667): 47 files, no impossibilities.
 # main (device 66309, inode 4331406): 10 files, no impossibilities.
 # bin (device 66309, inode 4331295): 13 files, no impossibilities.
 # lib (device 66309, inode 4331404): No files, no impossibilities so far.
 
-# 79 files, no impossibilities in 7 directories.
+# 82 files, no impossibilities in 7 directories.
 
 # Implicit Rules
 
@@ -560,6 +560,7 @@ main/g2_background.cpp:
 # Not a target:
 main/g2_erro.cpp:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2022-06-24 16:59:00.550503783
 #  File has been updated.
 #  Successfully updated.
@@ -592,7 +593,6 @@ bin/g2_background.o: main/g2_background.cpp
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'g2_background'
 #  File is an intermediate prerequisite.
- 
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 34):
@@ -649,12 +649,12 @@ bin/g2_erro.exe: bin/g2_erro.o lib/libBIU.a
 # General ('VPATH' variable) search path:
 # main:src
 
-# strcache buffers: 1 (0) / strings = 127 / storage = 1536 B / avg = 12 B
-# current buf: size = 8162 B / used = 1536 B / count = 127 / avg = 12 B
+# strcache buffers: 1 (0) / strings = 130 / storage = 1580 B / avg = 12 B
+# current buf: size = 8162 B / used = 1580 B / count = 130 / avg = 12 B
 
-# strcache performance: lookups = 232 / hit rate = 45%
+# strcache performance: lookups = 235 / hit rate = 44%
 # hash-table stats:
-# Load=127/8192=2%, Rehash=0, Collisions=5/232=2%
-# Finished Make data base on Sat Jun 25 11:08:09 2022
+# Load=130/8192=2%, Rehash=0, Collisions=5/235=2%
+# Finished Make data base on Sat Jun 25 20:58:08 2022
 
  
