@@ -1,5 +1,6 @@
 make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/joaobiu/LFEA'
+ 
 echo compiling... src/DataPoints.cpp [bin/DataPoints.o]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/DataPoints.o src/DataPoints.cpp -I src -I /usr/include/eigen3 
 echo compiling... src/DataReader.cpp [bin/DataReader.o]
@@ -21,6 +22,10 @@ echo compiling... main/g2_calib.cpp [bin/g2_calib.o]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/g2_calib.o main/g2_calib.cpp -I src -I /usr/include/eigen3 
 echo executable... bin/g2_calib.o [bin/g2_calib.exe]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -o bin/g2_calib.exe bin/g2_calib.o -I src -I /usr/include/eigen3 -L lib -l BIU -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
+echo compiling... main/g2_co.cpp [bin/g2_co.o]
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/g2_co.o main/g2_co.cpp -I src -I /usr/include/eigen3 
+echo executable... bin/g2_co.o [bin/g2_co.exe]
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -o bin/g2_co.exe bin/g2_co.o -I src -I /usr/include/eigen3 -L lib -l BIU -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
 echo compiling... main/g2_co_sem_fundo.cpp [bin/g2_co_sem_fundo.o]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/g2_co_sem_fundo.o main/g2_co_sem_fundo.cpp -I src -I /usr/include/eigen3 
 echo executable... bin/g2_co_sem_fundo.o [bin/g2_co_sem_fundo.exe]
@@ -41,6 +46,9 @@ echo compiling... main/ines.cpp [bin/ines.o]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/ines.o main/ines.cpp -I src -I /usr/include/eigen3 
 echo executable... bin/ines.o [bin/ines.exe]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -o bin/ines.exe bin/ines.o -I src -I /usr/include/eigen3 -L lib -l BIU -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
-rm bin/g2_co_sem_fundo.o bin/grupo5B.o bin/ines.o bin/g2_cs.o bin/g2_background.o bin/g2_erro.o bin/g2_calib.o
+rm bin/g2_co_sem_fundo.o bin/grupo5B.o bin/ines.o bin/g2_co.o bin/g2_cs.o bin/g2_background.o bin/g2_erro.o bin/g2_calib.o
 make: Leaving directory '/home/joaobiu/LFEA'
  
+make: Warning: File 'bin/g2_calib.exe' has modification time 3180 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+

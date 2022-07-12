@@ -1,4 +1,7 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: Warning: File 'bin/g2_calib.exe' has modification time 3179 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -6,7 +9,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jul 12 11:40:30 2022
+# Make data base, printed on Tue Jul 12 10:48:59 2022
 
 # Variables
 
@@ -105,7 +108,7 @@ SNAP_REEXEC =
 # makefile (from 'Makefile', line 12)
 ROOT_LIB := -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
 # environment
-VSCODE_PID = 2251
+VSCODE_PID = 7633
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
@@ -197,7 +200,7 @@ LOGNAME = joaobiu
 # environment
 SNAP_ARCH = amd64
 # makefile (from 'Makefile', line 10)
-EXES :=  bin/g2_background.exe  bin/g2_calib.exe  bin/g2_co_sem_fundo.exe  bin/g2_cs.exe  bin/g2_erro.exe  bin/grupo5B.exe  bin/ines.exe
+EXES :=  bin/g2_background.exe  bin/g2_calib.exe  bin/g2_co.exe  bin/g2_co_sem_fundo.exe  bin/g2_cs.exe  bin/g2_erro.exe  bin/grupo5B.exe  bin/ines.exe
 # makefile
 .DEFAULT_GOAL := all
 # environment
@@ -275,13 +278,14 @@ CXX := g++ -std=c++11 -g -O3
 # environment
 SNAP_USER_DATA = /home/joaobiu/snap/code/100
 # environment
+ 
 XDG_MENU_PREFIX = gnome-
 # environment
 GDMSESSION = ubuntu
 # environment
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # variable set hash-table stats:
-# Load=135/1024=13%, Rehash=0, Collisions=15/186=8%
+# Load=135/1024=13%, Rehash=0, Collisions=15/180=8%
 
 # Pattern-specific Variable Values
 
@@ -293,11 +297,11 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # src/bin: could not be stat'd.
 # src (device 66309, inode 4331421): 12 files, no impossibilities.
 # . (device 66309, inode 4326667): 51 files, no impossibilities.
-# main (device 66309, inode 4331406): 11 files, no impossibilities.
-# bin (device 66309, inode 4331295): 14 files, no impossibilities.
+# main (device 66309, inode 4331406): 12 files, no impossibilities.
+# bin (device 66309, inode 4331295): 15 files, no impossibilities.
 # lib (device 66309, inode 4331404): No files, no impossibilities so far.
 
-# 88 files, no impossibilities in 7 directories.
+# 90 files, no impossibilities in 7 directories.
 
 # Implicit Rules
 
@@ -320,6 +324,20 @@ bin/%.o: %.cpp
 # 3 implicit rules, 0 (0.0%) terminal.
 # Files
 
+# Not a target:
+main/g2_co_sem_fundo.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-23 12:45:11.844186024
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+main/g2_co.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-12 11:41:52.396615477
+#  File has been updated.
+#  Successfully updated.
+
 bin/analise.o: src/analise.cpp
 #  Precious file (prerequisite of .PRECIOUS).
 #  Implicit rule search has been done.
@@ -327,7 +345,6 @@ bin/analise.o: src/analise.cpp
 #  Last modified 2022-06-24 22:56:55.027447531
 #  File has been updated.
 #  Successfully updated.
- 
 #  recipe to execute (from 'Makefile', line 34):
 	@echo compiling... $< [$@]
 		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
@@ -346,12 +363,29 @@ main/g2_calib.cpp:
 #  File has been updated.
 #  Successfully updated.
 
+bin/g2_co_sem_fundo.o: main/g2_co_sem_fundo.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'g2_co_sem_fundo'
+#  File is an intermediate prerequisite.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 34):
+	@echo compiling... $< [$@]
+		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
+
 dump:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 42):
 	@echo SRCS...[$(SRCS)] [$(OBJS)] [$(EXES)]
+
+# Not a target:
+main/g2_cs.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-24 23:43:09.019288043
+#  File has been updated.
+#  Successfully updated.
 
 .PRECIOUS: bin/DataPoints.o bin/DataReader.o bin/Fitter.o bin/analise.o bin/hist.o
 #  Implicit rule search has not been done.
@@ -370,11 +404,15 @@ lib: lib/libBIU.a
 #  Modification time never checked.
 #  File has not been updated.
 
-# Not a target:
-bin/g2_cs.exe:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+bin/g2_cs.exe: bin/g2_cs.o lib/libBIU.a
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'g2_cs'
+#  Last modified 2022-06-24 23:43:14.051341768
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	@echo executable... $< [$@]
+		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
 
 clean:
 #  Implicit rule search has not been done.
@@ -385,10 +423,21 @@ clean:
 	rm -f $(wildcard bin/*) $(wildcard lib/*)
 
 # Not a target:
-bin/grupo5B.exe:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+main/ines.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-23 12:43:45.443548564
+#  File has been updated.
+#  Successfully updated.
+
+bin/grupo5B.exe: bin/grupo5B.o lib/libBIU.a
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'grupo5B'
+#  Last modified 2022-06-25 22:00:54.891074239
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	@echo executable... $< [$@]
+		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
 
 bin/DataPoints.o: src/DataPoints.cpp
 #  Precious file (prerequisite of .PRECIOUS).
@@ -404,11 +453,9 @@ bin/DataPoints.o: src/DataPoints.cpp
 bin/g2_calib.exe: bin/g2_calib.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'g2_calib'
-#  Last modified 2022-06-24 22:57:00.819392469
+#  Last modified 2022-07-12 11:41:59.02464788
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
 	@echo executable... $< [$@]
 		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
@@ -423,11 +470,25 @@ bin/g2_background.exe: bin/g2_background.o lib/libBIU.a
 	@echo executable... $< [$@]
 		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
 
-# Not a target:
-bin/g2_co_sem_fundo.exe:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+bin/g2_co_sem_fundo.exe: bin/g2_co_sem_fundo.o lib/libBIU.a
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'g2_co_sem_fundo'
+#  Last modified 2022-06-24 22:57:02.89137313
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	@echo executable... $< [$@]
+		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
+
+bin/g2_co.exe: bin/g2_co.o lib/libBIU.a
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'g2_co'
+#  Last modified 2022-07-12 11:42:01.836661627
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	@echo executable... $< [$@]
+		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
 
 bin/hist.o: src/hist.cpp
 #  Precious file (prerequisite of .PRECIOUS).
@@ -447,6 +508,16 @@ bin/Fitter.o: src/Fitter.cpp
 #  Last modified 2022-06-24 16:28:24.3999311
 #  File has been updated.
 #  Successfully updated.
+#  recipe to execute (from 'Makefile', line 34):
+	@echo compiling... $< [$@]
+		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
+
+bin/grupo5B.o: main/grupo5B.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'grupo5B'
+#  File is an intermediate prerequisite.
+#  File does not exist.
+#  File has not been updated.
 #  recipe to execute (from 'Makefile', line 34):
 	@echo compiling... $< [$@]
 		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
@@ -475,14 +546,33 @@ bin/DataReader.o: src/DataReader.cpp
 #  Modification time never checked.
 #  File has not been updated.
 
-all: bin/g2_background.exe bin/g2_calib.exe bin/g2_co_sem_fundo.exe bin/g2_cs.exe bin/g2_erro.exe bin/grupo5B.exe bin/ines.exe
+bin/ines.o: main/ines.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'ines'
+#  File is an intermediate prerequisite.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 34):
+	@echo compiling... $< [$@]
+		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
+
+bin/g2_co.o: main/g2_co.cpp
+#  Implicit rule search has been done.
+ 
+#  Implicit/static pattern stem: 'g2_co'
+#  File is an intermediate prerequisite.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 34):
+	@echo compiling... $< [$@]
+		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
+
+all: bin/g2_background.exe bin/g2_calib.exe bin/g2_co.exe bin/g2_co_sem_fundo.exe bin/g2_cs.exe bin/g2_erro.exe bin/grupo5B.exe bin/ines.exe
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
+#  Successfully updated.
 
 # Not a target:
 src/DataReader.cpp:
@@ -491,16 +581,27 @@ src/DataReader.cpp:
 #  File has been updated.
 #  Successfully updated.
 
-# Not a target:
-bin/ines.exe:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+bin/ines.exe: bin/ines.o lib/libBIU.a
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'ines'
+#  Last modified 2022-06-24 22:57:08.987317326
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	@echo executable... $< [$@]
+		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
 
 # Not a target:
 main/g2_background.cpp:
 #  Implicit rule search has been done.
 #  Last modified 2022-06-25 03:17:35.530819669
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+main/g2_erro.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-24 16:59:00.550503783
 #  File has been updated.
 #  Successfully updated.
 
@@ -518,9 +619,36 @@ src/analise.cpp:
 #  File has been updated.
 #  Successfully updated.
 
+bin/g2_cs.o: main/g2_cs.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'g2_cs'
+#  File is an intermediate prerequisite.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 34):
+	@echo compiling... $< [$@]
+		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
+
 bin/g2_background.o: main/g2_background.cpp
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'g2_background'
+#  File is an intermediate prerequisite.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 34):
+	@echo compiling... $< [$@]
+		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
+
+# Not a target:
+main/grupo5B.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-25 22:00:48.811017578
+#  File has been updated.
+#  Successfully updated.
+
+bin/g2_erro.o: main/g2_erro.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'g2_erro'
 #  File is an intermediate prerequisite.
 #  File does not exist.
 #  File has not been updated.
@@ -544,38 +672,23 @@ bin/g2_calib.o: main/g2_calib.cpp
 #  Implicit/static pattern stem: 'g2_calib'
 #  File is an intermediate prerequisite.
 #  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := bin/g2_calib.o
-# automatic
-# * := g2_calib
-# automatic
-# < := main/g2_calib.cpp
-# automatic
-# + := main/g2_calib.cpp
-# automatic
-# % := 
-# automatic
-# ^ := main/g2_calib.cpp
-# automatic
-# ? := main/g2_calib.cpp
-# automatic
-# | := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/18=6%
+#  File has not been updated.
 #  recipe to execute (from 'Makefile', line 34):
 	@echo compiling... $< [$@]
 		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
 
-# Not a target:
-bin/g2_erro.exe:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+bin/g2_erro.exe: bin/g2_erro.o lib/libBIU.a
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'g2_erro'
+#  Last modified 2022-06-24 22:57:06.863336587
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	@echo executable... $< [$@]
+		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
 
 # files hash-table stats:
-# Load=30/1024=3%, Rehash=0, Collisions=4/173=2%
+# Load=43/1024=4%, Rehash=0, Collisions=24/337=7%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
@@ -583,12 +696,12 @@ bin/g2_erro.exe:
 # General ('VPATH' variable) search path:
 # main:src
 
-# strcache buffers: 1 (0) / strings = 125 / storage = 1501 B / avg = 12 B
-# current buf: size = 8162 B / used = 1501 B / count = 125 / avg = 12 B
+# strcache buffers: 1 (0) / strings = 146 / storage = 1772 B / avg = 12 B
+# current buf: size = 8162 B / used = 1772 B / count = 146 / avg = 12 B
 
-# strcache performance: lookups = 198 / hit rate = 36%
+# strcache performance: lookups = 267 / hit rate = 45%
 # hash-table stats:
-# Load=125/8192=2%, Rehash=0, Collisions=0/198=0%
-# Finished Make data base on Tue Jul 12 11:40:30 2022
+# Load=146/8192=2%, Rehash=0, Collisions=7/267=3%
+# Finished Make data base on Tue Jul 12 10:48:59 2022
 
  
