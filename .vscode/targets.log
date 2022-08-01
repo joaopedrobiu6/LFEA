@@ -1,7 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: Warning: File 'bin/g2_calib.exe' has modification time 3179 s in the future
-make: warning:  Clock skew detected.  Your build may be incomplete.
-
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -9,7 +6,7 @@ make: warning:  Clock skew detected.  Your build may be incomplete.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jul 12 10:48:59 2022
+# Make data base, printed on Mon Aug  1 21:58:29 2022
 
 # Variables
 
@@ -42,7 +39,7 @@ QT_ACCESSIBILITY = 1
 # environment
 SNAP_INSTANCE_NAME = code
 # environment
-GDK_PIXBUF_MODULEDIR = /snap/code/100/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+GDK_PIXBUF_MODULEDIR = /snap/code/102/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # environment
 ROOTSYS = /home/joaobiu/root
 # environment
@@ -62,23 +59,23 @@ OLDPWD = /home/joaobiu
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = /home/joaobiu/.config/Code/CachedData/92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9
+VSCODE_CODE_CACHE_PATH = /home/joaobiu/.config/Code/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.7SFSO1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.ZGZZP1
 # default
 .LOADED := 
 # default
 .INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
 # environment
-GNOME_TERMINAL_SERVICE = :1.99
+GNOME_TERMINAL_SERVICE = :1.143
 # makefile
 MAKEFLAGS = pqrR
 # makefile
 CURDIR := /home/joaobiu/LFEA
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # makefile (from 'Makefile', line 8)
@@ -108,7 +105,7 @@ SNAP_REEXEC =
 # makefile (from 'Makefile', line 12)
 ROOT_LIB := -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
 # environment
-VSCODE_PID = 7633
+VSCODE_PID = 22709
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
@@ -118,7 +115,7 @@ DYLD_LIBRARY_PATH = /home/joaobiu/root/lib
 # makefile (from 'Makefile', line 11)
 ROOT_INC := -I /home/joaobiu/root/include
 # environment
-SESSION_MANAGER = local/joaobiu-IdeaPad-5-15ARE05:@/tmp/.ICE-unix/1547,unix/joaobiu-IdeaPad-5-15ARE05:/tmp/.ICE-unix/1547
+SESSION_MANAGER = local/joaobiu-IdeaPad-5-15ARE05:@/tmp/.ICE-unix/1621,unix/joaobiu-IdeaPad-5-15ARE05:/tmp/.ICE-unix/1621
 # automatic
 *F = $(notdir $*)
 # environment
@@ -150,13 +147,14 @@ LD_LIBRARY_PATH = /home/joaobiu/root/lib
 # environment
 SHLVL = 1
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/aa9a445b_66dc_422d_bf87_cdb6fdd81463
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/7847933d_1e26_4928_b753_12215b308d1e
 # environment
 MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
 CLING_STANDARD_PCH = none
+ 
 # environment
 SNAP_COOKIE = 0zJzSDLUayawyk5YNzaGgI0tteaD1knKEIdio7wpWrb3ZxtZoRGS
 # environment
@@ -170,9 +168,9 @@ LANGUAGE = pt:pt_BR:en
 # environment
 SNAP_USER_COMMON = /home/joaobiu/snap/code/common
 # environment
-SNAP = /snap/code/100
+SNAP = /snap/code/102
 # environment
-SNAP_REVISION = 100
+SNAP_REVISION = 102
 # environment
 SNAP_REAL_HOME = /home/joaobiu
 # environment
@@ -200,11 +198,11 @@ LOGNAME = joaobiu
 # environment
 SNAP_ARCH = amd64
 # makefile (from 'Makefile', line 10)
-EXES :=  bin/g2_background.exe  bin/g2_calib.exe  bin/g2_co.exe  bin/g2_co_sem_fundo.exe  bin/g2_cs.exe  bin/g2_erro.exe  bin/grupo5B.exe  bin/ines.exe
+EXES :=  bin/g2_background.exe  bin/g2_calib.exe  bin/g2_co.exe  bin/g2_co_sem_fundo.exe  bin/g2_cs.exe  bin/g2_erro.exe  bin/grupo5B.exe  bin/ines.exe  bin/test.exe
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 1565
+SYSTEMD_EXEC_PID = 1639
 # environment
 DISPLAY = :0
 # environment
@@ -218,7 +216,7 @@ MAKE_VERSION := 4.3
 # environment
 DISABLE_WAYLAND = 1
 # environment
-SNAP_DATA = /var/snap/code/100
+SNAP_DATA = /var/snap/code/102
 # environment
 SNAP_CONTEXT = 0zJzSDLUayawyk5YNzaGgI0tteaD1knKEIdio7wpWrb3ZxtZoRGS
 # environment
@@ -242,13 +240,13 @@ QT_IM_MODULE = ibus
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-f8712f32-1.69.0-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-f8712f32-1.69.2-main.sock
 # environment
 TERM = xterm-256color
 # environment
 SNAP_NAME = code
 # environment
-GSETTINGS_SCHEMA_DIR = /snap/code/100/usr/share/glib-2.0/schemas
+GSETTINGS_SCHEMA_DIR = /snap/code/102/usr/share/glib-2.0/schemas
 # environment
 IM_CONFIG_PHASE = 1
 # default
@@ -256,7 +254,7 @@ IM_CONFIG_PHASE = 1
 # automatic
 <F = $(notdir $<)
 # environment
-SNAP_VERSION = 92d25e35
+SNAP_VERSION = 3b889b09
 # default
 SUFFIXES := 
 # environment
@@ -276,9 +274,8 @@ CXXFLAGS := -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC
 # makefile (from 'Makefile', line 3)
 CXX := g++ -std=c++11 -g -O3
 # environment
-SNAP_USER_DATA = /home/joaobiu/snap/code/100
+SNAP_USER_DATA = /home/joaobiu/snap/code/102
 # environment
- 
 XDG_MENU_PREFIX = gnome-
 # environment
 GDMSESSION = ubuntu
@@ -297,11 +294,11 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # src/bin: could not be stat'd.
 # src (device 66309, inode 4331421): 12 files, no impossibilities.
 # . (device 66309, inode 4326667): 51 files, no impossibilities.
-# main (device 66309, inode 4331406): 12 files, no impossibilities.
-# bin (device 66309, inode 4331295): 15 files, no impossibilities.
+# main (device 66309, inode 4331406): 13 files, no impossibilities.
+# bin (device 66309, inode 4331295): 16 files, no impossibilities.
 # lib (device 66309, inode 4331404): No files, no impossibilities so far.
 
-# 90 files, no impossibilities in 7 directories.
+# 92 files, no impossibilities in 7 directories.
 
 # Implicit Rules
 
@@ -458,6 +455,7 @@ bin/g2_calib.exe: bin/g2_calib.o lib/libBIU.a
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 30):
 	@echo executable... $< [$@]
+ 
 		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
 
 bin/g2_background.exe: bin/g2_background.o lib/libBIU.a
@@ -558,7 +556,6 @@ bin/ines.o: main/ines.cpp
 
 bin/g2_co.o: main/g2_co.cpp
 #  Implicit rule search has been done.
- 
 #  Implicit/static pattern stem: 'g2_co'
 #  File is an intermediate prerequisite.
 #  File does not exist.
@@ -567,7 +564,7 @@ bin/g2_co.o: main/g2_co.cpp
 	@echo compiling... $< [$@]
 		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
 
-all: bin/g2_background.exe bin/g2_calib.exe bin/g2_co.exe bin/g2_co_sem_fundo.exe bin/g2_cs.exe bin/g2_erro.exe bin/grupo5B.exe bin/ines.exe
+all: bin/g2_background.exe bin/g2_calib.exe bin/g2_co.exe bin/g2_co_sem_fundo.exe bin/g2_cs.exe bin/g2_erro.exe bin/grupo5B.exe bin/ines.exe bin/test.exe
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
@@ -597,6 +594,23 @@ main/g2_background.cpp:
 #  Last modified 2022-06-25 03:17:35.530819669
 #  File has been updated.
 #  Successfully updated.
+
+# Not a target:
+main/test.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-15 19:39:05.084158294
+#  File has been updated.
+#  Successfully updated.
+
+bin/test.exe: bin/test.o lib/libBIU.a
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'test'
+#  Last modified 2022-07-15 19:39:07.148168384
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	@echo executable... $< [$@]
+		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
 
 # Not a target:
 main/g2_erro.cpp:
@@ -646,6 +660,16 @@ main/grupo5B.cpp:
 #  File has been updated.
 #  Successfully updated.
 
+bin/test.o: main/test.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'test'
+#  File is an intermediate prerequisite.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 34):
+	@echo compiling... $< [$@]
+		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
+
 bin/g2_erro.o: main/g2_erro.cpp
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'g2_erro'
@@ -688,7 +712,7 @@ bin/g2_erro.exe: bin/g2_erro.o lib/libBIU.a
 		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
 
 # files hash-table stats:
-# Load=43/1024=4%, Rehash=0, Collisions=24/337=7%
+# Load=46/1024=4%, Rehash=0, Collisions=24/366=7%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
@@ -696,12 +720,12 @@ bin/g2_erro.exe: bin/g2_erro.o lib/libBIU.a
 # General ('VPATH' variable) search path:
 # main:src
 
-# strcache buffers: 1 (0) / strings = 146 / storage = 1772 B / avg = 12 B
-# current buf: size = 8162 B / used = 1772 B / count = 146 / avg = 12 B
+# strcache buffers: 1 (0) / strings = 152 / storage = 1833 B / avg = 12 B
+# current buf: size = 8162 B / used = 1833 B / count = 152 / avg = 12 B
 
-# strcache performance: lookups = 267 / hit rate = 45%
+# strcache performance: lookups = 281 / hit rate = 45%
 # hash-table stats:
-# Load=146/8192=2%, Rehash=0, Collisions=7/267=3%
-# Finished Make data base on Tue Jul 12 10:48:59 2022
+# Load=152/8192=2%, Rehash=0, Collisions=7/281=2%
+# Finished Make data base on Mon Aug  1 21:58:29 2022
 
  
