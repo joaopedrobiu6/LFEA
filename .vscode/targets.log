@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Sep 26 11:58:58 2022
+# Make data base, printed on Tue Sep 27 10:08:28 2022
 
 # Variables
 
@@ -63,13 +63,13 @@ VSCODE_CODE_CACHE_PATH = /home/joaobiu/.config/Code/CachedData/74b1f979648cc44d3
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.R39ET1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.LZD2S1
 # default
 .LOADED := 
 # default
 .INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
 # environment
-GNOME_TERMINAL_SERVICE = :1.118
+GNOME_TERMINAL_SERVICE = :1.156
 # makefile
 MAKEFLAGS = pqrR
 # makefile
@@ -105,7 +105,7 @@ SNAP_REEXEC =
 # makefile (from 'Makefile', line 12)
 ROOT_LIB := -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
 # environment
-VSCODE_PID = 3681
+VSCODE_PID = 9513
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
@@ -115,7 +115,7 @@ DYLD_LIBRARY_PATH = /home/joaobiu/root/lib
 # makefile (from 'Makefile', line 11)
 ROOT_INC := -I /home/joaobiu/root/include
 # environment
-SESSION_MANAGER = local/joaobiu-IdeaPad-5-15ARE05:@/tmp/.ICE-unix/1612,unix/joaobiu-IdeaPad-5-15ARE05:/tmp/.ICE-unix/1612
+SESSION_MANAGER = local/joaobiu-IdeaPad-5-15ARE05:@/tmp/.ICE-unix/1620,unix/joaobiu-IdeaPad-5-15ARE05:/tmp/.ICE-unix/1620
 # automatic
 *F = $(notdir $*)
 # environment
@@ -147,7 +147,7 @@ LD_LIBRARY_PATH = /home/joaobiu/root/lib
 # environment
 SHLVL = 1
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/c6f660ac_f73a_426d_b784_bedcc525fd32
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/ddcc1831_9a9d_47c8_834f_24f8c3685018
 # environment
 MAKELEVEL := 0
 # default
@@ -201,7 +201,7 @@ EXES :=  bin/g2_background.exe  bin/g2_calib.exe  bin/g2_co.exe  bin/g2_co_sem_f
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 1630
+SYSTEMD_EXEC_PID = 1638
 # environment
 DISPLAY = :0
 # environment
@@ -280,7 +280,6 @@ GDMSESSION = ubuntu
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # variable set hash-table stats:
 # Load=134/1024=13%, Rehash=0, Collisions=15/179=8%
- 
 
 # Pattern-specific Variable Values
 
@@ -292,11 +291,11 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # src/bin: could not be stat'd.
 # src (device 66309, inode 4331421): 12 files, no impossibilities.
 # . (device 66309, inode 4326667): 18 files, no impossibilities.
-# main (device 66309, inode 4331406): 14 files, no impossibilities.
+# main (device 66309, inode 4331406): 15 files, no impossibilities.
 # bin (device 66309, inode 4331295): 17 files, no impossibilities.
 # lib (device 66309, inode 4331404): No files, no impossibilities so far.
 
-# 61 files, no impossibilities in 7 directories.
+# 62 files, no impossibilities in 7 directories.
 
 # Implicit Rules
 
@@ -568,7 +567,6 @@ bin/ines.o: main/ines.cpp
 	@echo compiling... $< [$@]
 		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
 
- 
 bin/g2_co.o: main/g2_co.cpp
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'g2_co'
@@ -745,12 +743,12 @@ bin/g2_erro.exe: bin/g2_erro.o lib/libBIU.a
 # General ('VPATH' variable) search path:
 # main:src
 
-# strcache buffers: 1 (0) / strings = 125 / storage = 1488 B / avg = 11 B
-# current buf: size = 8162 B / used = 1488 B / count = 125 / avg = 11 B
+# strcache buffers: 1 (0) / strings = 126 / storage = 1500 B / avg = 11 B
+# current buf: size = 8162 B / used = 1500 B / count = 126 / avg = 11 B
 
-# strcache performance: lookups = 262 / hit rate = 52%
+# strcache performance: lookups = 263 / hit rate = 52%
 # hash-table stats:
-# Load=125/8192=2%, Rehash=0, Collisions=7/262=3%
-# Finished Make data base on Mon Sep 26 11:58:58 2022
+# Load=126/8192=2%, Rehash=0, Collisions=7/263=3%
+# Finished Make data base on Tue Sep 27 10:08:28 2022
 
  
