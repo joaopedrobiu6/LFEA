@@ -1,0 +1,19 @@
+1 in:
+FCN=52.4999 FROM MIGRAD    STATUS=CONVERGED      70 CALLS          71 TOTAL
+                     EDM=1.63651e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     1.35676e+02   1.66528e+00   5.40910e-03   1.06319e-05
+   2  Mean         1.63354e+01   9.73182e-02   3.46964e-04   5.48997e-03
+   3  Sigma        5.90126e+00   6.51568e-02   1.30674e-05  -4.89049e-02
+Info in <TCanvas::Print>: file /home/joaobiu/LFEA/1in.png has been created
+
+-1.5 in:
+FCN=55.1883 FROM MIGRAD    STATUS=CONVERGED      86 CALLS          87 TOTAL
+                     EDM=8.98957e-12    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   2.1 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     1.36912e+02   1.81606e+00   2.40145e-03  -1.89836e-06
+   2  Mean        -2.35269e+01   9.56989e-02  -2.86646e-06   2.96158e-05
+   3  Sigma        5.96102e+00   5.92996e-02   5.24768e-07   6.61385e-04
+

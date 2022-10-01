@@ -18,6 +18,7 @@
 #include "TDirectory.h"
 #include "TFrame.h"
 #include "TGraphErrors.h"
+#include "TMultiGraph.h"
 
 #include <vector>
 #include <iostream>

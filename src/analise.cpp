@@ -12,7 +12,9 @@ std::vector<std::vector<float>> ReadData(std::string filename)
 
     std::string line;
     while (getline(rFile, line))
-    {                               // loop on file lines
+    {
+        // loop on file lines
+
         std::stringstream ss(line); // build object stringstream
         float d;
         std::vector<float> temp;
