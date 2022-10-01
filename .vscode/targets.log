@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Oct  1 13:42:43 2022
+# Make data base, printed on Sat Oct  1 17:30:29 2022
 
 # Variables
 
@@ -105,7 +105,7 @@ SNAP_REEXEC =
 # makefile (from 'Makefile', line 12)
 ROOT_LIB := -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
 # environment
-VSCODE_PID = 5069
+VSCODE_PID = 20804
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
@@ -275,12 +275,12 @@ SNAP_USER_DATA = /home/joaobiu/snap/code/108
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
+ 
 GDMSESSION = ubuntu
 # environment
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # variable set hash-table stats:
- 
-# Load=134/1024=13%, Rehash=0, Collisions=15/179=8%
+# Load=134/1024=13%, Rehash=0, Collisions=15/191=8%
 
 # Pattern-specific Variable Values
 
@@ -290,13 +290,15 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # main/bin: could not be stat'd.
 # src/bin: could not be stat'd.
+# main/lib: could not be stat'd.
 # src (device 66309, inode 4331421): 14 files, no impossibilities.
-# . (device 66309, inode 4326667): 34 files, no impossibilities.
+# . (device 66309, inode 4326667): 39 files, no impossibilities.
 # main (device 66309, inode 4331406): 13 files, no impossibilities.
-# bin (device 66309, inode 4331295): 17 files, no impossibilities.
+# bin (device 66309, inode 4331295): 2 files, no impossibilities.
+# src/lib: could not be stat'd.
 # lib (device 66309, inode 4331404): No files, no impossibilities so far.
 
-# 78 files, no impossibilities in 7 directories.
+# 68 files, no impossibilities in 9 directories.
 
 # Implicit Rules
 
@@ -319,40 +321,27 @@ bin/%.o: %.cpp
 # 3 implicit rules, 0 (0.0%) terminal.
 # Files
 
-bin/pet.exe: bin/pet.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'pet'
-#  Last modified 2022-09-30 17:59:15.158471272
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
+# Not a target:
+bin/pet.exe:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
-main/var2.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-09-30 17:57:33.761699414
-#  File has been updated.
-#  Successfully updated.
-
-bin/analise.o: src/analise.cpp
+bin/analise.o:
 #  Precious file (prerequisite of .PRECIOUS).
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'analise'
-#  Last modified 2022-09-29 22:44:33.358585174
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 bin/CorAng.exe: bin/CorAng.o lib/libBIU.a
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'CorAng'
-#  Last modified 2022-09-30 17:59:09.358427102
+#  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/12=0%
 #  recipe to execute (from 'Makefile', line 30):
 	@echo executable... $< [$@]
 		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
@@ -376,30 +365,6 @@ dump:
 #  Modification time never checked.
 #  File has not been updated.
 
-bin/coinfort.o: main/coinfort.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'coinfort'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-# Not a target:
-main/pet.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-09-28 23:37:24.282841877
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-main/var3.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-09-30 00:16:17.821738935
-#  File has been updated.
-#  Successfully updated.
-
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
@@ -413,41 +378,22 @@ lib: lib/libBIU.a
 #  File has not been updated.
 
 # Not a target:
-main/VarPos.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-09-29 23:51:32.833854742
-#  File has been updated.
-#  Successfully updated.
+bin/na22_2.exe:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
-bin/na22_2.exe: bin/na22_2.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'na22_2'
-#  Last modified 2022-09-30 17:59:13.230456589
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
+# Not a target:
+bin/var3.exe:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
-bin/var3.exe: bin/var3.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'var3'
-#  Last modified 2022-09-30 17:59:19.434503837
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-bin/VarPos.exe: bin/VarPos.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'VarPos'
-#  Last modified 2022-09-30 17:59:21.414518917
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
+# Not a target:
+bin/VarPos.exe:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 clean:
 #  Implicit rule search has not been done.
@@ -462,126 +408,97 @@ bin/CorAng.o: main/CorAng.cpp
 #  Implicit/static pattern stem: 'CorAng'
 #  File is an intermediate prerequisite.
 #  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-bin/var2.exe: bin/var2.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'var2'
-#  Last modified 2022-09-30 17:59:17.47048888
 #  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-bin/var2.o: main/var2.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'var2'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := bin/CorAng.o
+# automatic
+# * := CorAng
+# automatic
+# < := main/CorAng.cpp
+# automatic
+# + := main/CorAng.cpp
+# automatic
+# % := 
+# automatic
+# ^ := main/CorAng.cpp
+# automatic
+# ? := main/CorAng.cpp
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/18=6%
 #  recipe to execute (from 'Makefile', line 34):
 	@echo compiling... $< [$@]
 		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
 
 # Not a target:
-main/na22_2.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-09-28 23:40:35.522790835
-#  File has been updated.
-#  Successfully updated.
+bin/var2.exe:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
-bin/coinfort.exe: bin/coinfort.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'coinfort'
-#  Last modified 2022-09-30 17:59:07.410412267
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
+# Not a target:
+bin/coinfort.exe:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 bin/DataPoints.o: src/DataPoints.cpp
 #  Precious file (prerequisite of .PRECIOUS).
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'DataPoints'
-#  Last modified 2022-09-28 23:36:07.453276065
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-bin/na22_2.o: main/na22_2.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'na22_2'
-#  File is an intermediate prerequisite.
 #  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := bin/DataPoints.o
+# automatic
+# * := DataPoints
+# automatic
+# < := src/DataPoints.cpp
+# automatic
+# + := src/DataPoints.cpp
+# automatic
+# % := 
+# automatic
+# ^ := src/DataPoints.cpp
+# automatic
+# ? := src/DataPoints.cpp
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/18=6%
+#  recipe to execute (from 'Makefile', line 34):
+	@echo compiling... $< [$@]
+		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
+
+# Not a target:
+bin/hist.o:
+#  Precious file (prerequisite of .PRECIOUS).
+#  Implicit rule search has not been done.
+#  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-bin/hist.o: src/hist.cpp
-#  Precious file (prerequisite of .PRECIOUS).
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'hist'
-#  Last modified 2022-09-28 23:36:14.629421727
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
 
 # Not a target:
-src/multifit.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-09-30 17:58:59.114349093
-#  File has been updated.
-#  Successfully updated.
-
-bin/Fitter.o: src/Fitter.cpp
+bin/Fitter.o:
 #  Precious file (prerequisite of .PRECIOUS).
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'Fitter'
-#  Last modified 2022-09-28 23:36:12.585380224
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-bin/na22_1.exe: bin/na22_1.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'na22_1'
-#  Last modified 2022-09-30 17:59:11.290441815
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
- 
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
-src/hist.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-19 20:13:58.710348452
-#  File has been updated.
-#  Successfully updated.
+bin/na22_1.exe:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
-bin/DataReader.o: src/DataReader.cpp
+# Not a target:
+bin/DataReader.o:
 #  Precious file (prerequisite of .PRECIOUS).
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'DataReader'
-#  Last modified 2022-09-28 23:36:10.021328177
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 .DEFAULT:
@@ -589,19 +506,14 @@ bin/DataReader.o: src/DataReader.cpp
 #  Modification time never checked.
 #  File has not been updated.
 
-# Not a target:
-main/na22_1.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-09-28 23:40:27.522624399
-#  File has been updated.
-#  Successfully updated.
-
 all: bin/CorAng.exe bin/VarPos.exe bin/coinfort.exe bin/na22_1.exe bin/na22_2.exe bin/pet.exe bin/test.exe bin/var2.exe bin/var3.exe
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/12=0%
 
 # Not a target:
 main/CorAng.cpp:
@@ -610,125 +522,34 @@ main/CorAng.cpp:
 #  File has been updated.
 #  Successfully updated.
 
-bin/VarPos.o: main/VarPos.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'VarPos'
-#  File is an intermediate prerequisite.
-#  File does not exist.
+# Not a target:
+bin/test.exe:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
 
 # Not a target:
-src/DataReader.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-05 17:45:24.797938485
-#  File has been updated.
-#  Successfully updated.
-
-bin/var3.o: main/var3.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'var3'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-# Not a target:
-main/test.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-07-15 19:39:05.084158294
-#  File has been updated.
-#  Successfully updated.
-
-bin/test.exe: bin/test.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'test'
-#  Last modified 2022-09-30 17:59:15.506473922
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-bin/pet.o: main/pet.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'pet'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-# Not a target:
-src/Fitter.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-05 17:45:24.797938485
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-src/analise.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-09-29 22:44:27.534547199
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-main/coinfort.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-09-29 00:10:01.234236471
-#  File has been updated.
-#  Successfully updated.
-
-bin/na22_1.o: main/na22_1.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'na22_1'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-bin/test.o: main/test.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'test'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-bin/multifit.o: src/multifit.cpp
+bin/multifit.o:
 #  Precious file (prerequisite of .PRECIOUS).
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'multifit'
-#  Last modified 2022-09-30 17:59:05.422397128
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 lib/libBIU.a: bin/DataPoints.o bin/DataReader.o bin/Fitter.o bin/analise.o bin/hist.o bin/multifit.o
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'libBIU'
-#  Last modified 2022-09-30 17:59:05.486397615
+#  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
 #  recipe to execute (from 'Makefile', line 25):
 	@echo making lib...[$^]
 		ar ruv $@ $^
 			ranlib $@
 
 # files hash-table stats:
-# Load=48/1024=5%, Rehash=0, Collisions=0/382=0%
+# Load=27/1024=3%, Rehash=0, Collisions=0/115=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
@@ -736,12 +557,13 @@ lib/libBIU.a: bin/DataPoints.o bin/DataReader.o bin/Fitter.o bin/analise.o bin/h
 # General ('VPATH' variable) search path:
 # main:src
 
-# strcache buffers: 1 (0) / strings = 141 / storage = 1606 B / avg = 11 B
-# current buf: size = 8162 B / used = 1606 B / count = 141 / avg = 11 B
+# strcache buffers: 1 (0) / strings = 99 / storage = 1159 B / avg = 11 B
+# current buf: size = 8162 B / used = 1159 B / count = 99 / avg = 11 B
 
-# strcache performance: lookups = 276 / hit rate = 48%
+# strcache performance: lookups = 155 / hit rate = 36%
 # hash-table stats:
-# Load=141/8192=2%, Rehash=0, Collisions=1/276=0%
-# Finished Make data base on Sat Oct  1 13:42:43 2022
+ 
+# Load=99/8192=1%, Rehash=0, Collisions=0/155=0%
+# Finished Make data base on Sat Oct  1 17:30:29 2022
 
  
