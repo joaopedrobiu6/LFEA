@@ -29,7 +29,6 @@ std::vector<std::vector<float>> MFReadData(std::string filename)
 
     return data;
 };
-
 std::vector<std::vector<std::vector<float>>> DataSet(std::vector<std::vector<float>> data1, std::vector<std::vector<float>> data2)
 {
     std::vector<std::vector<std::vector<float>>> set;
@@ -37,7 +36,6 @@ std::vector<std::vector<std::vector<float>>> DataSet(std::vector<std::vector<flo
     set.push_back(data2);
     return set;
 };
-
 void DataSetDump(std::vector<std::vector<std::vector<float>>> set)
 {
     for (int i = 0; i < set.size(); i++)
@@ -49,8 +47,7 @@ void DataSetDump(std::vector<std::vector<std::vector<float>>> set)
             std::cout << "(" << set[i][j][0] << ", " << set[i][j][1] << ", " << set[i][j][2] << ", " << set[i][j][3] << ")" << std::endl;
     }
 };
-
-void MultiFit(std::vector<std::vector<std::vector<float>>> data, float yi, float yf, float xi, float xf, const char *title)
+void MultiFit(std::vector<std::vector<std::vector<float>>> data, const char *title)
 {
     TApplication app("app", NULL, NULL);
     TCanvas c("canvas", "histogram", 0, 0, 1280, 720);
@@ -95,15 +92,15 @@ void MultiFit(std::vector<std::vector<std::vector<float>>> data, float yi, float
     auto g1 = new TGraphErrors(n, x, y, ex, ey);
     auto g2 = new TGraphErrors(m, xm, ym, exm, eym);
 
-    TF1 *f = new TF1("f", "gaus", x[0], x[data[0].size()]);
-    TF1 *f1 = new TF1("f1", "gaus", xm[0], xm[data[1].size()]);
+    TF1 *f = new TF1("f", "pol1", x[0], x[data[0].size()]);
+    TF1 *f1 = new TF1("f1", "pol1", xm[0], xm[data[1].size()]);
     f->SetLineColor(kRed + 1);
     f1->SetLineColor(kBlue + 1);
     f->SetLineWidth(2);
     f1->SetLineWidth(2);
 
-    g1->Fit(f, "R");
-    g2->Fit(f1, "R+");
+    //g1->Fit(f, "R");
+    //g2->Fit(f1, "R+");
 
     g1->SetMarkerStyle(kFullCircle);
     g2->SetMarkerStyle(8);
@@ -111,27 +108,28 @@ void MultiFit(std::vector<std::vector<std::vector<float>>> data, float yi, float
     g1->SetMarkerColor(50);
     g2->SetMarkerColor(70);
     g1->SetMarkerSize(1);
-    g2->SetMarkerSize(1);
+    g2->SetMarkerSize(3);
 
     mg->Add(g1);
     mg->Add(g2);
 
     // c.SetGrid();
-    //  mg->SetMinimum(yi);
-    //  mg->SetMaximum(yf);
+    //mg->SetMinimum(-1);
+    //mg->SetMaximum(2.2);
 
     // gPad->SetLogx();
     // gPad->SetLogy();
 
-    // mg->GetXaxis()->SetLimits(xi, xf);
+    mg->GetYaxis()->SetRangeUser(0, 90000);
+    // mg->GetXaxis()->SetLimits(-10, 5100);
 
-    TLegend *legend = new TLegend(0.2, .90, .50, 1.);
+    /* TLegend *legend = new TLegend(0.2, .90, .50, 1.);
     legend->SetFillColor(0);
     legend->AddEntry(f, "1 in", "l");
     legend->AddEntry(f1, "-1.5 in", "l");
 
     legend->Draw("SAME");
-
+ */
     mg->SetTitle(title);
     mg->Draw("AP");
     c.Update();
