@@ -3,13 +3,13 @@
 
 int main()
 {
-    auto data1 = MFReadData("dadosiris010.txt");
+    auto data1 = MFReadData("dadosfinais.txt");
     /* for (int i = 0; i < data1.size(); i++)
     {
         data1[i][2] = 0;
         data1[i][3] = 0;
     } */
-    auto data2 = MFReadData("maxx.txt");
+    auto data2 = MFReadData("max.txt");
     /*  for (int i = 0; i < data1.size(); i++)
     {
         data2[i][2] = 0;
@@ -21,4 +21,4 @@ int main()
     return 0;
 }
 
-/* [0] * (sin(([1]/c)*(x[0]-[2])) * sin(([1]/c)*(x[0]-[2]))) / (([1]/c)*(x[0]-[2])*([1]/c)*(x[0]-[2])) + [3] */
+//([0] * (sin([1]*(x[0]-[2])) * sin([1]*(x[0]-[2]))) / ([1]*(x[0]-[2])*[1]*(x[0]-[2]))) + [3] 
