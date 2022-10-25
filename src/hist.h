@@ -22,6 +22,7 @@
 #include <sstream> // std::stringstream
 #include <fstream> // std::fstream
 #include <iomanip>
+#pragma once
 
 #include "DataReader.h"
 

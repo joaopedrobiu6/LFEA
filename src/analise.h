@@ -26,6 +26,8 @@
 #include <fstream> // std::fstream
 #include <iomanip>
 
+#pragma once
+
 std::vector<std::vector<float>> ReadData(std::string filename);
 void HistMaker(std::vector<std::vector<float>> data, bool wapp, int n, double min, double max, const char *title, const char *savename, const char *draw);
 void GraphMaker(std::vector<std::vector<float>> data, const char *title, const char *expr, const char *draw, int color);

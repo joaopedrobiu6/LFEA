@@ -20,6 +20,7 @@
 #include "TGraph.h"
 #include "TF1.h"
 #include "TROOT.h"
+#pragma once
 
 class DataPoints
 {

@@ -17,6 +17,8 @@
 #include "TF1.h"
 #include "TMultiGraph.h"
 
+#pragma once
+
 class DataReader
 {
 public:

@@ -26,6 +26,7 @@
 #include <sstream> // std::stringstream
 #include <fstream> // std::fstream
 #include <iomanip>
+#pragma once
 
 std::vector<std::vector<float>> MFReadData(std::string filename);
 std::vector<std::vector<std::vector<float>>> DataSet(std::vector<std::vector<float>> data1, std::vector<std::vector<float>> data2);

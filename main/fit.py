@@ -9,33 +9,30 @@ from scipy.signal import square
 from scipy.integrate import quad
 from math import *
 
+import csv
+
 from scipy.optimize import curve_fit
 
 
-def check_float(potential_float):
-    try:
-        float(potential_float)
-        return True
-    except ValueError:
-        return False
+def read(filename):
+# opening the file in read mode
+    my_file = open(filename, "r")
+  
+# reading the file
+    data = my_file.read()
+  
+# replacing end of line('/n') with ' ' and
+# splitting the text it further when '.' is seen.
+    data_into_list = data.replace('\n', '').split(";")
+  
+# printing the data
+    print(data_into_list)
+    my_file.close()
+    return data_into_list
 
 
-def read(file_path):
+data = read("/home/joaobiu/LFEA/rend.txt")
 
-    file = open(file_path, "r")
-    leitura = []
-    for line in file:
-        lido = line.strip().split(";")
-        if check_float(lido[0]) == False:
-            leitura.append(lido)
-        else:
-            leitura.append(lido)
-
-    file.close()
-
-    return leitura
-
-data = read("../rend.txt")
 print(data)
 
 
@@ -43,4 +40,13 @@ def func(x, a, b):
     return a*x + b
 
 
-popt, pcov = curve_fit(func, x, y, sigma=sqrt(y))
+
+#plt.plot(x, y, '-o', label='data')
+
+#popt, pcov = curve_fit(func, x, y)
+
+#y1 = func(x, *popt)
+
+#plt.plot(x1, y1)
+
+plt.show()
