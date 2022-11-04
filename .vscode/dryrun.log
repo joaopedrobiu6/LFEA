@@ -40,6 +40,10 @@ echo compiling... main/coinfort.cpp [bin/coinfort.o]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/coinfort.o main/coinfort.cpp -I src -I /usr/include/eigen3 
 echo executable... bin/coinfort.o [bin/coinfort.exe]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -o bin/coinfort.exe bin/coinfort.o -I src -I /usr/include/eigen3 -L lib -l BIU -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
+echo compiling... main/laser.cpp [bin/laser.o]
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/laser.o main/laser.cpp -I src -I /usr/include/eigen3 
+echo executable... bin/laser.o [bin/laser.exe]
+g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -o bin/laser.exe bin/laser.o -I src -I /usr/include/eigen3 -L lib -l BIU -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
 echo compiling... main/na22_1.cpp [bin/na22_1.o]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/na22_1.o main/na22_1.cpp -I src -I /usr/include/eigen3 
 echo executable... bin/na22_1.o [bin/na22_1.exe]
@@ -80,6 +84,6 @@ echo compiling... main/var3.cpp [bin/var3.o]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -c -o bin/var3.o main/var3.cpp -I src -I /usr/include/eigen3 
 echo executable... bin/var3.o [bin/var3.exe]
 g++ -std=c++11 -g -O3 -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC -o bin/var3.exe bin/var3.o -I src -I /usr/include/eigen3 -L lib -l BIU -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
-rm bin/nacl_todo.o bin/si.o bin/coinfort.o bin/rend.o bin/CorAng.o bin/var2.o bin/na22_2.o bin/45.o bin/VarPos.o bin/var3.o bin/90.o bin/pet.o bin/na22_1.o bin/test.o bin/ang_pos.o bin/si_lab2.o
+rm bin/nacl_todo.o bin/si.o bin/coinfort.o bin/rend.o bin/CorAng.o bin/var2.o bin/na22_2.o bin/45.o bin/laser.o bin/VarPos.o bin/var3.o bin/90.o bin/pet.o bin/na22_1.o bin/test.o bin/ang_pos.o bin/si_lab2.o
 make: Leaving directory '/home/joaobiu/LFEA'
  
