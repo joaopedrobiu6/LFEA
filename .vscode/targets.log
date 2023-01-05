@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Oct 31 10:27:53 2022
+# Make data base, printed on Thu Jan  5 14:59:32 2023
 
 # Variables
 
@@ -15,17 +15,19 @@ GDK_BACKEND = x11
 # environment
 LC_ALL = C
 # environment
+NO_AT_BRIDGE = 1
+# environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
 SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 CMAKE_PREFIX_PATH = /home/joaobiu/root
 # environment
-SNAP_INSTANCE_KEY = 
-# environment
 JUPYTER_PATH = /home/joaobiu/root/etc/notebook
 # makefile (from 'Makefile', line 18)
 VPATH = main:src
+# environment
+MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
 # environment
 LC_NAME = pt_PT.UTF-8
 # environment
@@ -47,7 +49,7 @@ QT_ACCESSIBILITY = 1
 # environment
 SNAP_INSTANCE_NAME = code
 # environment
-GDK_PIXBUF_MODULEDIR = /snap/code/111/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+GDK_PIXBUF_MODULEDIR = /snap/code/116/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # environment
 ROOTSYS = /home/joaobiu/root
 # environment
@@ -59,7 +61,7 @@ PWD = /home/joaobiu/LFEA
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
-XDG_DATA_DIRS = /usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # environment
 OLDPWD = /home/joaobiu
 # automatic
@@ -67,7 +69,7 @@ OLDPWD = /home/joaobiu
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = /home/joaobiu/.config/Code/CachedData/d045a5eda657f4d7b676dedbfa7aab8207f8a075
+VSCODE_CODE_CACHE_PATH = /home/joaobiu/.config/Code/CachedData/e8a3071ea4344d9d48ef8a4df2c097372b0c5161
 # environment
 LANG = C
 # environment
@@ -77,7 +79,7 @@ XAUTHORITY = /run/user/1000/gdm/Xauthority
 # default
 .INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
 # environment
-GNOME_TERMINAL_SERVICE = :1.89
+GNOME_TERMINAL_SERVICE = :1.111
 # makefile
 MAKEFLAGS = pqrR
 # makefile
@@ -87,7 +89,7 @@ APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # makefile (from 'Makefile', line 8)
-SRCS := src/DataPoints.cpp src/DataReader.cpp src/Fitter.cpp src/analise.cpp src/hist.cpp src/multifit.cpp
+SRCS := 
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
@@ -97,21 +99,19 @@ SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # default
 .SHELLFLAGS := -c
 # environment
-XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu-xorg:/etc/xdg
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # environment
-XDG_SESSION_DESKTOP = ubuntu-xorg
+XDG_SESSION_DESKTOP = ubuntu
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST := Makefile
-# environment
-SNAP_REEXEC = 
 # automatic
 @F = $(notdir $@)
 # makefile (from 'Makefile', line 12)
 ROOT_LIB := -L/home/joaobiu/root/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/home/joaobiu/root/lib -pthread -lm -ldl -rdynamic
 # environment
-VSCODE_PID = 6973
+VSCODE_PID = 7469
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -121,7 +121,7 @@ DYLD_LIBRARY_PATH = /home/joaobiu/root/lib
 # makefile (from 'Makefile', line 11)
 ROOT_INC := -I /home/joaobiu/root/include
 # environment
-SESSION_MANAGER = local/joaobiu-IdeaPad-5-15ARE05:@/tmp/.ICE-unix/1668,unix/joaobiu-IdeaPad-5-15ARE05:/tmp/.ICE-unix/1668
+SESSION_MANAGER = local/joaobiu-IdeaPad-5-15ARE05:@/tmp/.ICE-unix/1806,unix/joaobiu-IdeaPad-5-15ARE05:/tmp/.ICE-unix/1806
 # automatic
 *F = $(notdir $*)
 # environment
@@ -139,7 +139,7 @@ VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupp
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # makefile (from 'Makefile', line 9)
-OBJS :=  bin/DataPoints.o  bin/DataReader.o  bin/Fitter.o  bin/analise.o  bin/hist.o  bin/multifit.o
+OBJS := 
 # environment
 GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 # makefile
@@ -153,7 +153,7 @@ LD_LIBRARY_PATH = /home/joaobiu/root/lib
 # environment
 SHLVL = 1
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/1d54f1fe_f6f5_4907_9573_7b3d766724b1
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/336515dc_d5cc_4037_827f_02b9098e6d9b
 # environment
 MAKELEVEL := 0
 # default
@@ -177,9 +177,9 @@ SNAP_USER_COMMON = /home/joaobiu/snap/code/common
 # environment
 LC_TIME = pt_PT.UTF-8
 # environment
-SNAP = /snap/code/111
+SNAP = /snap/code/116
 # environment
-SNAP_REVISION = 111
+SNAP_REVISION = 116
 # environment
 SNAP_REAL_HOME = /home/joaobiu
 # environment
@@ -197,7 +197,7 @@ LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:
 # automatic
 +F = $(notdir $+)
 # environment
-DESKTOP_SESSION = ubuntu-xorg
+DESKTOP_SESSION = ubuntu
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # 'override' directive
@@ -207,23 +207,25 @@ LOGNAME = joaobiu
 # environment
 SNAP_ARCH = amd64
 # makefile (from 'Makefile', line 10)
-EXES :=  bin/45.exe  bin/90.exe  bin/CorAng.exe  bin/VarPos.exe  bin/ang_pos.exe  bin/coinfort.exe  bin/laser.exe  bin/na22_1.exe  bin/na22_2.exe  bin/nacl_todo.exe  bin/pet.exe  bin/rend.exe  bin/si.exe  bin/si_lab2.exe  bin/test.exe  bin/var2.exe  bin/var3.exe
+EXES := 
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 1691
+SYSTEMD_EXEC_PID = 7253
 # environment
-DISPLAY = :0
+DISPLAY = :1
 # environment
 USER = joaobiu
 # environment
 GTK_MODULES = gail:atk-bridge
+# environment
+DEFAULTS_PATH = /usr/share/gconf/ubuntu.default.path
 # default
 MAKE_VERSION := 4.3
 # 'override' directive
 .SHELLSTATUS := 0
 # environment
-SNAP_DATA = /var/snap/code/111
+SNAP_DATA = /var/snap/code/116
 # environment
 SNAP_CONTEXT = 14hAk4e5jnEfYUMxbt2UtwSiFb5cA1diSd5e_7mzjY2L39RPXof7
 # environment
@@ -255,13 +257,13 @@ QT_IM_MODULE = ibus
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-f8712f32-1.72.2-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-f8712f32-1.74.2-main.sock
 # environment
 TERM = xterm-256color
 # environment
 SNAP_NAME = code
 # environment
-GSETTINGS_SCHEMA_DIR = /snap/code/111/usr/share/glib-2.0/schemas
+GSETTINGS_SCHEMA_DIR = /snap/code/116/usr/share/glib-2.0/schemas
 # environment
 IM_CONFIG_PHASE = 1
 # environment
@@ -271,14 +273,14 @@ PAPERSIZE = a4
 # automatic
 <F = $(notdir $<)
 # environment
-SNAP_VERSION = d045a5ed
+SNAP_VERSION = e8a3071e
 # default
 SUFFIXES := 
- 
 # environment
 SHLIB_PATH = /home/joaobiu/root/lib
 # environment
 VSCODE_CLI = 1
+ 
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
@@ -292,17 +294,17 @@ CXXFLAGS := -pthread -std=c++17 -m64 -I/home/joaobiu/root/include -fPIC
 # makefile (from 'Makefile', line 3)
 CXX := g++ -std=c++11 -g -O3
 # environment
-SNAP_USER_DATA = /home/joaobiu/snap/code/111
+SNAP_USER_DATA = /home/joaobiu/snap/code/116
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
-GDMSESSION = ubuntu-xorg
+GDMSESSION = ubuntu
 # environment
 LC_IDENTIFICATION = pt_PT.UTF-8
 # environment
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # variable set hash-table stats:
-# Load=145/1024=14%, Rehash=0, Collisions=17/202=8%
+# Load=146/1024=14%, Rehash=0, Collisions=17/191=9%
 
 # Pattern-specific Variable Values
 
@@ -310,21 +312,16 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Directories
 
-# main/bin: could not be stat'd.
-# src/bin: could not be stat'd.
-# main/lib: could not be stat'd.
-# src (device 66309, inode 2104197): 14 files, no impossibilities.
-# . (device 66309, inode 2100908): 51 files, no impossibilities.
-# main (device 66309, inode 2104171): 21 files, no impossibilities.
-# bin (device 66309, inode 2104105): 2 files, no impossibilities.
-# src/lib: could not be stat'd.
-# lib (device 66309, inode 2104167): No files, no impossibilities so far.
+# src: could not be stat'd.
+# . (device 66309, inode 2100908): 37 files, no impossibilities.
+# main: could not be stat'd.
+# bin: could not be stat'd.
 
-# 88 files, no impossibilities in 9 directories.
+# 37 files, no impossibilities in 4 directories.
 
 # Implicit Rules
 
-lib/%.a: bin/DataPoints.o bin/DataReader.o bin/Fitter.o bin/analise.o bin/hist.o bin/multifit.o
+lib/%.a:
 #  recipe to execute (from 'Makefile', line 25):
 	@echo making lib...[$^]
 		ar ruv $@ $^
@@ -343,50 +340,6 @@ bin/%.o: %.cpp
 # 3 implicit rules, 0 (0.0%) terminal.
 # Files
 
-# Not a target:
-bin/pet.exe:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-bin/nacl_todo.exe:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-bin/45.exe: bin/45.o lib/libBIU.a
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: '45'
-#  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/12=0%
-#  recipe to execute (from 'Makefile', line 30):
-	@echo executable... $< [$@]
-		$(CXX) $(CXXFLAGS) -o $@ $< -I src $(EIGEN_INC) -L lib -l BIU $(ROOT_LIB)
-
-# Not a target:
-bin/analise.o:
-#  Precious file (prerequisite of .PRECIOUS).
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-bin/CorAng.exe:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-src/DataPoints.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-10-30 21:25:01.622156435
-#  File has been updated.
-#  Successfully updated.
-
 dump:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -394,7 +347,7 @@ dump:
 #  recipe to execute (from 'Makefile', line 42):
 	@echo SRCS...[$(SRCS)] [$(OBJS)] [$(EXES)]
 
-.PRECIOUS: bin/DataPoints.o bin/DataReader.o bin/Fitter.o bin/analise.o bin/hist.o bin/multifit.o
+.PRECIOUS:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -411,24 +364,6 @@ lib: lib/libBIU.a
 #  Modification time never checked.
 #  File has not been updated.
 
-# Not a target:
-bin/na22_2.exe:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-bin/var3.exe:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-bin/VarPos.exe:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
 clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -438,189 +373,26 @@ clean:
 	rm -f $(wildcard bin/*) $(wildcard lib/*)
 
 # Not a target:
-bin/ang_pos.exe:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-bin/var2.exe:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-bin/coinfort.exe:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-bin/laser.exe:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-bin/DataPoints.o: src/DataPoints.cpp
-#  Precious file (prerequisite of .PRECIOUS).
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'DataPoints'
-#  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := bin/DataPoints.o
-# automatic
-# * := DataPoints
-# automatic
-# < := src/DataPoints.cpp
-# automatic
-# + := src/DataPoints.cpp
-# automatic
-# % := 
-# automatic
-# ^ := src/DataPoints.cpp
-# automatic
-# ? := src/DataPoints.cpp
-# automatic
-# | := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/18=6%
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-# Not a target:
-bin/hist.o:
-#  Precious file (prerequisite of .PRECIOUS).
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-bin/45.o: main/45.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: '45'
-#  File is an intermediate prerequisite.
-#  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := bin/45.o
-# automatic
-# * := 45
-# automatic
-# < := main/45.cpp
-# automatic
-# + := main/45.cpp
-# automatic
-# % := 
-# automatic
-# ^ := main/45.cpp
-# automatic
-# ? := main/45.cpp
-# automatic
-# | := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/18=6%
-#  recipe to execute (from 'Makefile', line 34):
-	@echo compiling... $< [$@]
-		$(CXX) $(CXXFLAGS) -c -o $@ $< -I src $(EIGEN_INC) 
-
-# Not a target:
-main/45.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-10-30 21:25:01.622156435
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-bin/Fitter.o:
-#  Precious file (prerequisite of .PRECIOUS).
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-bin/si.exe:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-bin/na22_1.exe:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-bin/DataReader.o:
- 
-#  Precious file (prerequisite of .PRECIOUS).
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
 .DEFAULT:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
-all: bin/45.exe bin/90.exe bin/CorAng.exe bin/VarPos.exe bin/ang_pos.exe bin/coinfort.exe bin/laser.exe bin/na22_1.exe bin/na22_2.exe bin/nacl_todo.exe bin/pet.exe bin/rend.exe bin/si.exe bin/si_lab2.exe bin/test.exe bin/var2.exe bin/var3.exe
+all:
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/12=0%
+#  Successfully updated.
 
 # Not a target:
-bin/90.exe:
+lib/libBIU.a:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-
-# Not a target:
-bin/rend.exe:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-bin/test.exe:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-bin/si_lab2.exe:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-bin/multifit.o:
-#  Precious file (prerequisite of .PRECIOUS).
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-lib/libBIU.a: bin/DataPoints.o bin/DataReader.o bin/Fitter.o bin/analise.o bin/hist.o bin/multifit.o
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'libBIU'
-#  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
-#  recipe to execute (from 'Makefile', line 25):
-	@echo making lib...[$^]
-		ar ruv $@ $^
-			ranlib $@
 
 # files hash-table stats:
-# Load=35/1024=3%, Rehash=0, Collisions=10/131=8%
+# Load=9/1024=1%, Rehash=0, Collisions=0/24=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
@@ -628,12 +400,12 @@ lib/libBIU.a: bin/DataPoints.o bin/DataReader.o bin/Fitter.o bin/analise.o bin/h
 # General ('VPATH' variable) search path:
 # main:src
 
-# strcache buffers: 1 (0) / strings = 128 / storage = 1333 B / avg = 10 B
-# current buf: size = 8162 B / used = 1333 B / count = 128 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 54 / storage = 464 B / avg = 8 B
+# current buf: size = 8162 B / used = 464 B / count = 54 / avg = 8 B
 
-# strcache performance: lookups = 183 / hit rate = 30%
+# strcache performance: lookups = 69 / hit rate = 21%
 # hash-table stats:
-# Load=128/8192=2%, Rehash=0, Collisions=5/183=3%
-# Finished Make data base on Mon Oct 31 10:27:53 2022
+# Load=54/8192=1%, Rehash=0, Collisions=2/69=3%
+# Finished Make data base on Thu Jan  5 14:59:32 2023
 
  
