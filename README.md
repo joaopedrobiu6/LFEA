@@ -1,4 +1,4 @@
-# Fitter
+# REP PARA UC LFEA-I e LFEA-II
 Basicamente o meu backup para nao perder horas de trabalho!!
 
 Na verdade: 
@@ -12,3 +12,4 @@ Sugere-se o uso da makefile incluída.
 "Fitter.h" - Método de fazer ajusted de funções a dados, mas não funciona muito bem ainda (outdated)
 "hist.h" - Faz histogramas
 "multifit.h" - Gráficos com mais do que um set de dados
+
